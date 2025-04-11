@@ -8,8 +8,8 @@ const styles = {
 
 const NavBar = () => {
   return (
-    <nav className="shadow-md bg-blue-50" style={styles}>
-      <div className="flex justify-between items-center px-4 py-3 md:px-10">
+    <nav className="shadow-md bg-blue-50 " style={styles}>
+      <div className="flex justify-between items-center px-4 py-3 md:px-10 ">
         <Link to="/"><img src={logo} alt="PolyMech Engineers" className="h-18 w-auto " /></Link>
 
         <ul className="flex space-x-14 text-lg font-bold">
