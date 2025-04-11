@@ -8,7 +8,7 @@ const styles = {
 
 const NavBar = () => {
   return (
-    <nav className="shadow-md bg-blue-50" style={styles}>
+    <nav className="fixed top-0 w-full z-50 shadow-md bg-[#edf5f9]" style={styles}>
       <div className="flex justify-between items-center px-4 py-3 md:px-10">
         <Link to="/"><img src={logo} alt="PolyMech Engineers" className="h-18 w-auto " /></Link>
 
