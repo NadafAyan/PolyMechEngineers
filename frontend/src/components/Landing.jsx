@@ -3,7 +3,6 @@ import Logo from '../assets/landingPage/LogoImage.png';
 import Text from '../assets/landingPage/PolymechText.png';
 import { Link } from 'react-router-dom';
 import image1 from '../assets/landingPage/1.png';
-import image2 from '../assets/landingPage/2.png';
 import image3 from '../assets/landingPage/3.png';
 import image4 from '../assets/landingPage/4.png';
 
