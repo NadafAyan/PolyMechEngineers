@@ -6,7 +6,7 @@ import React from "react";
 const About = ({ fullHeight = true }) => {
   return (
     <div
-      className={`relative w-full flex flex-col items-center justify-center bg-white ${
+      className={`relative w-full flex flex-col items-center justify-center bg-[#EEF6FA] ${
         fullHeight ? "min-h-screen" : "my-10"
       } overflow-hidden`}
     >
