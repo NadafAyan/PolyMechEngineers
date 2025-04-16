@@ -1,4 +1,5 @@
-import React from 'react'
+import {React, useEffect} from 'react'
+import { motion } from "framer-motion";
 import Logo from '../assets/landingPage/LogoImage.png';
 import Text from '../assets/landingPage/PolymechText.png';
 import { Link } from 'react-router-dom';
@@ -8,7 +9,23 @@ import image4 from '../assets/landingPage/4.png';
 
 
 const Landing = () => {
+    useEffect(() => {
+      document.body.style.overflow = "hidden";
+    
+      const timer = setTimeout(() => {
+        document.body.style.overflow = "auto";
+      }, 1000); // Adjust based on your animation duration
+    
+      return () => clearTimeout(timer);
+    }, []);
   return (
+    <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+        >
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>
 
         <img src={image1} alt="image" className="absolute top-100 -right-30 rotate-[35deg] z-0 blur-[2.5px]" />
@@ -28,6 +45,7 @@ const Landing = () => {
             </div>
         </div>
     </div>
+    </motion.div>
   )
 }
 

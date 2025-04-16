@@ -1,4 +1,5 @@
-import React from "react";
+import {React, useEffect} from "react";
+import { motion } from "framer-motion";
 import image1 from "../assets/landingPage/1.png";
 import image2 from "../assets/landingPage/2.png";
 import image3 from "../assets/trode.png";
@@ -15,7 +16,24 @@ const Services = () => {
     // fontWeight: 'bold',
   };
 
+    // useEffect(() => {
+    //   document.body.style.overflow = "hidden";
+    
+    //   const timer = setTimeout(() => {
+    //     document.body.style.overflow = "auto";
+    //   }, 1000); // Adjust based on your animation duration
+    
+    //   return () => clearTimeout(timer);
+    // }, []);
+
   return (
+     <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+        >
     <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28">
       <h1 className="text-6xl font-bold text-center pt-6 mb-10">
         OUR{" "}
@@ -174,6 +192,7 @@ const Services = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 

@@ -1,10 +1,29 @@
-import React from "react";
+import {React, useEffect} from "react";
+import { motion } from "framer-motion";
 // import image1 from "../assets/landingPage/2.png";
 // import image2 from '../assets/homeImage.png';
 
 
 const About = ({ fullHeight = true }) => {
+
+  useEffect(() => {
+      document.body.style.overflow = "hidden";
+    
+      const timer = setTimeout(() => {
+        document.body.style.overflow = "auto";
+      }, 1000); // Adjust based on your animation duration
+    
+      return () => clearTimeout(timer);
+    }, []);
+
   return (
+    <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+        >
     <div
       className={`relative w-full flex flex-col items-center justify-center bg-[#EEF6FA] ${
         fullHeight ? "min-h-screen" : "my-10"
@@ -47,6 +66,7 @@ const About = ({ fullHeight = true }) => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 
