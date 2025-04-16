@@ -1,5 +1,5 @@
 import React from 'react';
-// import image1 from '../assets/landingPage/1.png';
+import image1 from '../assets/landingPage/1.png';
 import image2 from '../assets/landingPage/4.png';
 // import image3 from '../assets/landingPage/2.png';
 import image4 from '../assets/homeImage.png';
@@ -11,10 +11,10 @@ const Home = () => {
     <div className="font-montserrat relative bg-[#EEF6FA] min-h-screen flex items-center justify-center px-4 overflow-hidden">
       <div className="space-y-10 text-center">
         
-        {/* <img src={image1} alt="image1" className='absolute rotate-55 top-30 -right-30 z-0 opacity-60 '/> */}
-        <img src={image2} alt="image2" className='-rotate-38 absolute -left-60 -top-1 opacity-60 z-0'/>
+        <img src={image1} alt="image1" className='absolute rotate-50 top-1 -right-30 z-0 blur-[2.5px] '/>
+        <img src={image2} alt="image2" className='-rotate-38 absolute -left-60 top-35 blur-[2.5px] z-0 h-95'/>
         {/* <img src={image3} alt="image3" className='absolute top-150 -left-30 opacity-60 '/> */}
-        <img src={image4} alt="image4" className='absolute -rotate-110 opacity-60 top-150 left-350'/>
+        <img src={image4} alt="image4" className='absolute -rotate-120  top-130 left-290 blur-[2.5px]'/>
 
         <div className="flex flex-wrap justify-center items-center gap-2">
           <h3 className=" text-4xl font-bold">INNOVATING TOMORROW</h3>

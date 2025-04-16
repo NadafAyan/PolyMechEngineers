@@ -11,9 +11,8 @@ const Landing = () => {
   return (
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>
 
-        <img src={image1} alt="image" className='absolute top-10 -right-30 opacity-60  rotate-35' />
-        {/* <img src={image2} alt="image" className='absolute bottom-1 left-25 rotate-12 opacity-70 animate-pulse'/> */}
-        <img src={image4} alt="image" className='absolute -left-70 top-50 -rotate-45 opacity-70 '/>
+        <img src={image1} alt="image" className="absolute top-100 -right-30 rotate-[35deg] z-0 blur-[2.5px]" />
+        <img src={image4} alt="image" className='absolute -left-70 top-120 -rotate-45 blur-[2.5px]'/>
 
 
         <div className='w-full flex justify-center items-center min-h-screen'>
