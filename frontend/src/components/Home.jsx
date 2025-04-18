@@ -27,6 +27,8 @@ const Home = () => {
       transition={{ duration: 0.5 }}
       className="bg-[#EEF6FA] min-h-screen overflow-hidden"
     >
+
+      <title>Home | PolyMech Engineers</title>
       <div className=" relative bg-[#EEF6FA] min-h-screen flex items-center justify-center px-4 overflow-hidden">
         <div className="space-y-20 text-center pt-10">
           <img

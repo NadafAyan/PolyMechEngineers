@@ -24,6 +24,8 @@ const About = ({ fullHeight = true }) => {
           transition={{ duration: 0.5 }}
           className="bg-[#EEF6FA] min-h-screen overflow-hidden"
         >
+
+        <title>About us | PolyMech Engineers</title>
     <div
       className={`relative w-full flex flex-col items-center justify-center bg-[#EEF6FA] ${
         fullHeight ? "min-h-screen" : "my-10"

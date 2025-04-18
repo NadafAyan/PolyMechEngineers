@@ -26,6 +26,7 @@ const Landing = () => {
           transition={{ duration: 0.5 }}
           className="bg-[#EEF6FA] min-h-screen overflow-hidden"
         >
+          <title>Welcome to PolyMech Engineers</title>
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>
 
         <img src={image1} alt="image" className="absolute top-100 -right-30 rotate-[35deg] z-0 blur-[2.5px]" />
