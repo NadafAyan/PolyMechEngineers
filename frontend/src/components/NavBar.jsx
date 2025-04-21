@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/landingPage/Logo.png";
 
 const styles = {
@@ -7,6 +7,17 @@ const styles = {
 };
 
 const NavBar = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const links = [
+    { path: "/home", label: "HOME" },
+    { path: "/services", label: "SERVICES" },
+    { path: "/gallery", label: "GALLERY" },
+    { path: "/about", label: "ABOUT" },
+    { path: "/contact", label: "CONTACT" },
+  ];
+
   return (
     <nav
       className="fixed top-0 w-full z-50 shadow-md bg-[#edf5f9]"
@@ -18,36 +29,23 @@ const NavBar = () => {
         </Link>
 
         <ul className="flex space-x-14 text-2xl font-semibold">
-          <li>
-            <Link to="/home" className="relative group">
-              <span className="transition-colors duration-300">HOME</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-yellow-400 transition-all duration-350 group-hover:w-full"></span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/services" className="relative group">
-              <span className="transition-colors duration-300">SERVICES</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/gallery" className="relative group">
-              <span className="transition-colors duration-300">GALLERY</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </li>
-          <li>          
-          <Link to="/about" className="relative group">
-              <span className="transition-colors duration-300">ABOUT</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </li>
-          <li>
-          <Link to="/contact" className="relative group">
-              <span className="transition-colors duration-300">CONTACT</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </li>
+          {links.map(({ path, label }) => (
+            <li key={path}>
+              <Link
+                to={path}
+                className={`relative group ${
+                  currentPath === path ? "text-yellow-500" : ""
+                }`}
+              >
+                <span className="transition-colors duration-300">{label}</span>
+                <span
+                  className={`absolute left-0 -bottom-1 h-[3px] bg-yellow-400 transition-all duration-300 ${
+                    currentPath === path ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

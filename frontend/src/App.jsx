@@ -10,6 +10,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Landing from "./components/Landing";
+import Gallery from './components/Gallery';
 
 function App() {
   useEffect(() => {
@@ -50,6 +51,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
