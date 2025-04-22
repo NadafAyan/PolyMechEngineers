@@ -34,7 +34,7 @@ const NavBar = () => {
               <Link
                 to={path}
                 className={`relative group ${
-                  currentPath === path ? "text-yellow-500" : ""
+                  currentPath === path ? "text-black" : ""
                 }`}
               >
                 <span className="transition-colors duration-300">{label}</span>
