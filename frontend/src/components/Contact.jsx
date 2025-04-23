@@ -1,8 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const Contact = () => {
+
+  const containerStyle = {
+    width: "100%",
+    height: "600px",
+    borderRadius: "12px"
+  };
+
+  // 16.712995529174805,74.44988250732422
+  const center = {
+    lat: 16.712995529174805,  
+    lng: 74.44988250732422 
+  };
+  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -86,9 +101,15 @@ const Contact = () => {
       </div>
 
       {/* Google map api */}
-      <div className="w-full h-screen font-sans bg-yellow-400 flex justify-center items-center">
-        <h3 className="font-bold text-6xl ">Google map API</h3>
-      </div>
+      <LoadScript googleMapsApiKey="AIzaSyBVPadoh6P29Ogjvs0jQlJ2o-SKP9x5dOw">
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={15}
+      >
+        <Marker position={center} />
+      </GoogleMap>
+    </LoadScript>
       </div>
       </motion.div>
     //   </div>
