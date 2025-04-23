@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt,  FaInstagram, FaLinkedinIn,FaTwitter } from "react-icons/fa";
 import logo from "../assets/landingPage/Logo.png";
 
 const Footer = () => {
@@ -44,14 +44,14 @@ const Footer = () => {
                 <div className="flex flex-col items-center justify-center h-full ">
                 <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
                 <div className="flex justify-center items-top gap-4">                
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook size={24} className="text-black hover:text-yellow-400 transition" />
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/polymecheng" target="_blank" rel="noopener noreferrer">
                         <FaTwitter size={24} className="text-black hover:text-yellow-400 transition" />
                     </a>
                     <a href="https://www.instagram.com/polymech_engineers/profilecard/?igsh=NTd1bDVxeGM5eXJ0" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={24} className="text-black hover:text-yellow-400 transition" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/polymech-engineers/about/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedinIn size={24} className="text-black hover:text-yellow-400 transition" />
                     </a>
             </div>
             </div>
