@@ -11,6 +11,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Landing from "./components/Landing";
 import Gallery from './components/Gallery';
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -56,6 +57,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </AnimatePresence>
+      <Footer />
     </>
   );
 }
