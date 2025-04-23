@@ -11,7 +11,7 @@ import logo from "../assets/landingPage/Logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-white text-gray-800 px-10 pt-10">
+    <div className="bg-white text-gray-800 px-0 pt-10">
       {/* Logo in Center */}
       <div className="flex-1 text-center">
         <img
@@ -21,7 +21,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-row px-20 w-full mt-10  ">
+      <div className="flex flex-row px-30 w-full mt-10  ">
         <div className="flex-1 row-1 space-y-5 mt-0  ">
           {/* Info */}
           <div className="flex items-start gap-4">
@@ -85,9 +85,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap  text-black  justify-center w-screen items-start mt-12">
-        <p>
-          All rights reserved by PolyMech Engineers{" "}&reg;
+      <div className="flex flex-wrap  text-black  justify-center  items-start mt-10 bg-black">
+        <p className="text-center text-m py-2 px-4 text-white">
+          All rights reserved by PolyMech Engineers. ISO 9001 Certified Company{" "}&reg;
         </p>
       </div>
     </div>

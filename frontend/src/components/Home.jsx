@@ -49,16 +49,16 @@ const Home = () => {
           />
 
           <div className="flex flex-wrap justify-center items-center gap-2 pt-12">
-            <h3 className="font-montserrat text-4xl font-extrabold">
-              INNOVATING TOMORROW
+            <h3 className="font-montserrat text-3xl font-bold  ">
+            PRECISION IN GRAPHITE, EXCELLENCE IN 
             </h3>
-            <span className="font-montserrat bg-[#feb602]  py-1 pl-1.5 pr-14 rounded-r-2xl text-4xl  font-extrabold">
-              TODAY
+            <span className="font-montserrat bg-[#feb602]  py-1 pl-1.5 pr-14 rounded-r-2xl text-3xl  font-bold z-1">
+            PERFORMANCE
             </span>
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-5">
-            <span className="font-montserrat bg-[#feb602] px-4 py-2 text-6xl rounded-l-2xl pl-14 font-bold tracking-wider z-10 ">
+            <span className="font-montserrat bg-[#feb602] px-4 py-2 text-6xl rounded-l-2xl pl-14 font-bold tracking-wider z-10">
               PRECISION
             </span>
             <h1 className="font-montserrat text-6xl font-bold tracking-wider z-10">
