@@ -60,26 +60,26 @@ const Contact = () => {
       {/* Info */}
       <div className="flex-1 space-y-8 mt-34">
           <div className="flex items-start gap-4">
-            <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1" />
+            <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1.5" />
             <div>
-              <h3 className="text-xl font-bold">Address</h3>
-              <p>
+              <h3 className="text-2xl font-bold">Address</h3>
+              <p className="text-xl">
                 Industrial Estate 22/68 Ganesh nagar 9th lane, Ichalkaranji
               </p>
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <FaEnvelope size={24} className="text-yellow-400 mt-1" />
+            <FaEnvelope size={24} className="text-yellow-400 mt-1.5" />
             <div>
-              <h3 className="text-xl font-bold">Email</h3>
-              <p>polymecheng@gmail.com</p>
+              <h3 className="text-2xl font-bold">Email</h3>
+              <p className="text-xl">polymecheng@gmail.com</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <FaPhoneAlt size={24} className="text-yellow-400 mt-1" />
             <div>
-              <h3 className="text-xl font-bold">Contact</h3>
-              <p>Tel: +91 9665756396, +91 9422582439</p>
+              <h3 className="text-2xl font-bold">Contact</h3>
+              <p className="text-xl">Tel: +91 9665756396, +91 9422582439</p>
             </div>
           </div>
         </div>

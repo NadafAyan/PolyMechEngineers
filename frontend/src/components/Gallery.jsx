@@ -110,7 +110,7 @@ const Gallery = () => {
                     onMouseLeave={(e) => e.target.pause()}
                   />
 
-                  <div className="absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full opacity-10 group-hover:opacity-0 transition-opacity duration-300">
+                  <div className="absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full opacity-50 group-hover:opacity-0 transition-opacity duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5"
