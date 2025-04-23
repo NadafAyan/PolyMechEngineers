@@ -28,7 +28,11 @@ const Footer = () => {
             <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1" />
             <div>
               <h3 className="text-xl font-bold">Address</h3>
-              <p>Industrial Estate 22/68 Ganesh nagar 9th lane, Ichalkaranji</p>
+              <a href="https://www.google.com/maps/place/Polymech+Engineers/@16.712985,74.449895,21z/data=!4m6!3m5!1s0x3bc11d75abee1e31:0x60ba7aa36bc161e3!8m2!3d16.7129848!4d74.4498953!16s%2Fg%2F11fz0tvdts?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D"  target="_blank" rel="noopener noreferrer">
+              <p className="hover:text-yellow-500 transition ">
+                Industrial Estate 22/68 Ganesh nagar 9th lane, Ichalkaranji
+              </p>
+              </a>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -87,7 +91,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-wrap  text-black  justify-center  items-start mt-10 bg-black">
         <p className="text-center text-m py-2 px-4 text-white">
-          All rights reserved by PolyMech Engineers. ISO 9001 Certified Company{" "}&reg;
+          All rights reserved by PolyMech Engineers.{" "}&reg; ISO 9001 Certified Company
         </p>
       </div>
     </div>

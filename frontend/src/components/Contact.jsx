@@ -73,28 +73,35 @@ const Contact = () => {
         </div>
 
       {/* Info */}
-      <div className="flex-1 space-y-8 mt-34">
+      <div className="flex-1 space-y-8 mt-34 mb-10">
           <div className="flex items-start gap-4">
             <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1.5" />
             <div>
               <h3 className="text-2xl font-bold">Address</h3>
-              <p className="text-xl">
+              <a href="https://www.google.com/maps/place/Polymech+Engineers/@16.712985,74.449895,21z/data=!4m6!3m5!1s0x3bc11d75abee1e31:0x60ba7aa36bc161e3!8m2!3d16.7129848!4d74.4498953!16s%2Fg%2F11fz0tvdts?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl hover:text-yellow-400 transition">
                 Industrial Estate 22/68 Ganesh nagar 9th lane, Ichalkaranji
               </p>
+              </a>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <FaEnvelope size={24} className="text-yellow-400 mt-1.5" />
             <div>
               <h3 className="text-2xl font-bold">Email</h3>
-              <p className="text-xl">polymecheng@gmail.com</p>
+              <p className="text-xl hover:text-yellow-400 transition">polymecheng@gmail.com</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <FaPhoneAlt size={24} className="text-yellow-400 mt-1" />
-            <div>
+            <div className="flex flex-col justify-between">
               <h3 className="text-2xl font-bold">Contact</h3>
-              <p className="text-xl">Tel: +91 9665756396, +91 9422582439</p>
+              <div className="flex flex-row">
+                <p className="text-xl">Tel:</p>
+              <p className="text-xl hover:text-yellow-400 transition"> +91 9665756396</p>
+              <p className="text-xl">,</p> 
+              <p className="text-xl hover:text-yellow-400 transition">+91 9422582439</p>
+              </div>
             </div>
           </div>
         </div>
