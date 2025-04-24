@@ -32,7 +32,90 @@ const Services = () => {
         </h1>
 
         <div className="grid grid-row-3 gap-y-5">
-          {/* row 1 */}
+        <div className="grid grid-cols-5 gap-4">
+            {/* row 1 */}
+            {/* col 1 */}
+            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  col-span-2 transition-all duration-500 hover:scale-103">
+              <img
+                src={image3}
+                alt="prototypes"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-90 z-10 transition-all duration-500 delay-300 
+                group-hover:scale-45 group-hover:top-28 group-hover:left-28"
+              />
+
+              <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-33%]">
+                <p className="text-white text-8xl font-bold text-center z-0">
+                  Graphite Electrode
+                </p>
+              </div>
+
+              <div
+                className="absolute inset-0 flex items-center justify-center z-20"
+                style={textStyle}
+              >
+                <p className="absolute text-transparent border-2 text-8xl font-bold text-center z-20 transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-74.5%]">
+                  Graphite Electrode
+                </p>
+              </div>
+
+              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start pb-66 pl-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                <p className="text-white text-xl font-bold">
+                  Lowest price in the industry
+                </p>
+              </div>
+
+              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                <p className="text-white text-lg font-medium">
+                  Graphite Electrode Machining: Precision Perfected. At Polymech
+                  Engineers, we specialize in the meticulous machining of
+                  graphite electrodes, ensuring exacting precision and superior
+                  quality. Leveraging advanced technology and our team's
+                  expertise.
+                </p>
+              </div>
+            </div>
+
+            {/* col 2 */}
+            <div className="relative bg-black rounded-2xl h-110 overflow-hidden col-span-3 group transition-all duration-500 delay-300 hover:scale-103">
+              <img
+                src={image4}
+                alt="prototypes"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-98 z-10 group transition-all delay-300 duration-500 group-hover:scale-60
+                group-hover:top-30 group-hover:left-30"
+              />
+
+              <div
+                className="absolute inset-0 flex items-center justify-center z-0 group transition-all duration-500 delay-300 group-hover:scale-85 
+              group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
+              >
+                <p className="text-white text-7xl font-bold text-center">
+                  Casting Components
+                </p>
+              </div>
+
+              <div
+                className="absolute inset-0 flex items-center justify-center z-20 group transition-all duration-500 delay-300 group-hover:scale-85 
+              group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
+                style={textStyle}
+              >
+                <p className="text-transparent border-2 text-7xl font-bold text-center">
+                  Casting Components
+                </p>
+              </div>
+
+              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                <p className="text-white text-xl font-medium">
+                  Graphite Electrode Machining: Precision Perfected. At Polymech
+                  Engineers, we specialize in the meticulous machining of
+                  graphite electrodes, ensuring exacting precision and superior
+                  quality. Leveraging advanced technology and our team's
+                  expertise.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* row 2 */}
           <div className="grid grid-cols-2 gap-4">
             {/* col 1 */}
             <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300 transition-all duration-500 hover:scale-103">
@@ -116,90 +199,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-
-          {/* row 2 */}
-          <div className="grid grid-cols-5 gap-4">
-            {/* col 1 */}
-            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  col-span-2 transition-all duration-500 hover:scale-103">
-              <img
-                src={image3}
-                alt="prototypes"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-90 z-10 transition-all duration-500 delay-300 
-                group-hover:scale-45 group-hover:top-28 group-hover:left-28"
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-33%]">
-                <p className="text-white text-8xl font-bold text-center z-0">
-                  Graphite Electrode
-                </p>
-              </div>
-
-              <div
-                className="absolute inset-0 flex items-center justify-center z-20"
-                style={textStyle}
-              >
-                <p className="absolute text-transparent border-2 text-8xl font-bold text-center z-20 transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-74.5%]">
-                  Graphite Electrode
-                </p>
-              </div>
-
-              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start pb-66 pl-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-xl font-bold">
-                  Lowest price in the industry
-                </p>
-              </div>
-
-              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-lg font-medium">
-                  Graphite Electrode Machining: Precision Perfected. At Polymech
-                  Engineers, we specialize in the meticulous machining of
-                  graphite electrodes, ensuring exacting precision and superior
-                  quality. Leveraging advanced technology and our team's
-                  expertise.
-                </p>
-              </div>
-            </div>
-
-            {/* col 2 */}
-            <div className="relative bg-black rounded-2xl h-110 overflow-hidden col-span-3 group transition-all duration-500 delay-300 hover:scale-103">
-              <img
-                src={image4}
-                alt="prototypes"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-98 z-10 group transition-all delay-300 duration-500 group-hover:scale-60
-                group-hover:top-30 group-hover:left-30"
-              />
-
-              <div
-                className="absolute inset-0 flex items-center justify-center z-0 group transition-all duration-500 delay-300 group-hover:scale-85 
-              group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
-              >
-                <p className="text-white text-7xl font-bold text-center">
-                  Casting Components
-                </p>
-              </div>
-
-              <div
-                className="absolute inset-0 flex items-center justify-center z-20 group transition-all duration-500 delay-300 group-hover:scale-85 
-              group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
-                style={textStyle}
-              >
-                <p className="text-transparent border-2 text-7xl font-bold text-center">
-                  Casting Components
-                </p>
-              </div>
-
-              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-xl font-medium">
-                  Graphite Electrode Machining: Precision Perfected. At Polymech
-                  Engineers, we specialize in the meticulous machining of
-                  graphite electrodes, ensuring exacting precision and superior
-                  quality. Leveraging advanced technology and our team's
-                  expertise.
-                </p>
-              </div>
-            </div>
-          </div>
-
+          
           {/* row 3 */}
           <div className="grid grid-cols-2 gap-4">
             {/* col 1 */}
