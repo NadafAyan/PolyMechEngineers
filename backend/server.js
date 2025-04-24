@@ -18,11 +18,22 @@ const client = require("twilio")(accountSid, authToken);
 // const client = new twilio(accountSid, authToken);
 
 app.use(bodyParser.json());
+const allowedOrigins = [
+  "https://polymechengineers.vercel.app",
+];
+
 app.use(cors({
-  origin: "https://polymechengineers.vercel.app",
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin.replace(/\/$/, ""))) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["POST"],
   credentials: true,
 }));
+
 
 app.post("/send-whatsapp", (req, res) => {
   const { name, email, phone, message } = req.body;
