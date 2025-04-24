@@ -32,7 +32,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     alert("Message sent successfully!");
-    await fetch("https://polymechengineers-backend.onrender.com//send-whatsapp", {
+    await fetch("https://polymechengineers-backend.onrender.com/send-whatsapp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
