@@ -1,12 +1,14 @@
 import {React, useEffect} from 'react'
 import { motion } from "framer-motion";
-import Logo from '../assets/landingPage/LogoImage.png';
+// import Logo from '../assets/landingPage/LogoImage.png';
 import Text from '../assets/landingPage/PolymechText.png';
 import { Link } from 'react-router-dom';
 import image1 from '../assets/landingPage/1.png';
 import image3 from '../assets/landingPage/3.png';
 import image4 from '../assets/landingPage/4.png';
-
+import Logo from '../assets/Polymech_Logo_updated-removebg-preview.png';
+import graphite1 from '../assets/landingPage/graphite bg removed 1.png';
+import graphite2 from '../assets/landingPage/trode.png';
 
 const Landing = () => {
     useEffect(() => {
@@ -14,7 +16,7 @@ const Landing = () => {
     
       const timer = setTimeout(() => {
         document.body.style.overflow = "auto";
-      }, 1000); // Adjust based on your animation duration
+      }, 1000);
     
       return () => clearTimeout(timer);
     }, []);
@@ -29,13 +31,13 @@ const Landing = () => {
           <title>Welcome to PolyMech Engineers</title>
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>
 
-        <img src={image1} alt="image" className="absolute top-100 -right-30 rotate-[35deg] z-0 blur-[2.5px]" />
-        <img src={image4} alt="image" className='absolute -left-70 top-120 -rotate-45 blur-[2.5px]'/>
+        <img src={graphite1} alt="image" className="absolute top-120 -right-75 -rotate-[73.99deg] z-0 blur-[1.8px]" />
+        <img src={graphite2} alt="image" className='absolute -left-87 top-120 rotate-[38deg] blur-[1.8px]'/>
 
 
         <div className='w-full flex justify-center items-center min-h-screen'>
-            <div className='flex flex-col justify-center items-center'>
-            <img src={Logo} alt="PolyMech Logo" className=''/> <br />
+            <div className='flex flex-col justify-center items-center mt-20'>
+            <img src={Logo} alt="PolyMech Logo" className='h-55 w-auto'/> <br />
             <img src={Text} alt="Text" className=''/>
             
             <Link to="/home">
