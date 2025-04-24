@@ -11,22 +11,22 @@ import graphite1 from '../assets/landingPage/graphite bg removed 1.png';
 import graphite2 from '../assets/landingPage/trode.png';
 
 const Landing = () => {
-    useEffect(() => {
-      document.body.style.overflow = "hidden";
+    // useEffect(() => {
+    //   document.body.style.overflow = "hidden";
     
-      const timer = setTimeout(() => {
-        document.body.style.overflow = "auto";
-      }, 1000);
+    //   const timer = setTimeout(() => {
+    //     document.body.style.overflow = "auto";
+    //   }, 1000);
     
-      return () => clearTimeout(timer);
-    }, []);
+    //   return () => clearTimeout(timer);
+    // }, []);
   return (
     <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+          className="bg-[#EEF6FA] min-h-screen overflow-y-scroll"
         >
           <title>Welcome to PolyMech Engineers</title>
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>

@@ -5,18 +5,22 @@ import image1 from "../assets/landingPage/1.png";
 import image2 from "../assets/landingPage/4.png";
 // import image3 from '../assets/landingPage/2.png';
 import image4 from "../assets/homeImage.png";
+import graphite1 from '../assets/landingPage/graphite bg removed 1.png';
+import graphite2 from '../assets/landingPage/trode.png';
+import graphite3 from '../assets/Graphite images/graphite bg removed 3 1.png';
+import graphite4 from '../assets/Graphite images/graphite bg removed 4 1.png';
 
 const Home = () => {
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
+  // useEffect(() => {
+  //   document.body.style.overflow = "hidden";
   
-    const timer = setTimeout(() => {
-      document.body.style.overflow = "auto";
-    }, 1000); // Adjust based on your animation duration
+  //   const timer = setTimeout(() => {
+  //     document.body.style.overflow = "auto";
+  //   }, 1000); // Adjust based on your animation duration
   
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
   
 
   return (
@@ -25,27 +29,27 @@ const Home = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+      className="bg-[#EEF6FA] min-h-screen overflow-y-scroll"
     >
 
       <title>Home | PolyMech Engineers</title>
       <div className=" relative bg-[#EEF6FA] min-h-screen flex items-center justify-center px-4 overflow-hidden">
         <div className="space-y-20 text-center pt-10">
           <img
-            src={image1}
+            src={graphite1}
             alt="image1"
-            className="absolute rotate-50 top-5 -right-40 z-0 blur-[2px] "
+            className="absolute -rotate-[73.99deg] top-20 -right-85 z-0 blur-[1.8px] "
           />
           <img
-            src={image2}
+            src={graphite2}
             alt="image2"
-            className="-rotate-38 absolute -left-70 top-35 blur-[2px] z-0 h-95"
+            className="rotate-38 absolute -left-60 top-35 blur-[1.8px] z-0 scale-60"
           />
-          {/* <img src={image3} alt="image3" className='absolute top-150 -left-30 opacity-60 '/> */}
+          <img src={graphite4} alt="image3" className='absolute top-150 left-9 '/>
           <img
-            src={image4}
+            src={graphite3}
             alt="image4"
-            className="absolute -rotate-120  top-140 left-300 blur-[1.5px]"
+            className="absolute -rotate-[1deg]  top-110 -right-1 blur-[0.5px]"
           />
 
           <div className="flex flex-wrap justify-center items-center gap-2 pt-12">
