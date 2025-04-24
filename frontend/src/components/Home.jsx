@@ -29,7 +29,7 @@ const Home = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#EEF6FA] min-h-screen overflow-y-scroll"
+      className="bg-[#EEF6FA] min-h-screen overflow-hidden"
     >
 
       <title>Home | PolyMech Engineers</title>
@@ -45,11 +45,11 @@ const Home = () => {
             alt="image2"
             className="rotate-38 absolute -left-60 top-35 blur-[1.8px] z-0 scale-60"
           />
-          <img src={graphite4} alt="image3" className='absolute top-150 left-9 '/>
+          {/* <img src={graphite4} alt="image3" className='absolute top-150 left-9 '/> */}
           <img
             src={graphite3}
             alt="image4"
-            className="absolute -rotate-[1deg]  top-110 -right-1 blur-[0.5px]"
+            className="absolute -rotate-[1deg]  top-110 right-10 blur-[0.5px]"
           />
 
           <div className="flex flex-wrap justify-center items-center gap-2 pt-12">

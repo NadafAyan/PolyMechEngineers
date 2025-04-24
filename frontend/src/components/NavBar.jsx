@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-lg border-b border-white/20 shadow-md"
+      className="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-sm border-b border-white/30 shadow"
       style={styles}
     >
       <div className="flex justify-between items-center px-4 py-3 md:px-10">

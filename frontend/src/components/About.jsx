@@ -9,7 +9,7 @@ const About = ({ fullHeight = true }) => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-cover bg-center bg-no-repeat overflow-y-scroll"
+      className="min-h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{
         backgroundImage: `url(${bgimg})`,
       }}
