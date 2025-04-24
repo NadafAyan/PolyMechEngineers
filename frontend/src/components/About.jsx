@@ -22,9 +22,11 @@ const About = ({ fullHeight = true }) => {
         }`}
       >
         <div className="relative z-10 flex flex-col items-center justify-center px-4">
-          <h1 className="text-white mt-4 text-6xl xl:text-7xl font-bold tracking-wider">
-            ABOUT US
-          </h1>
+        <h1 className="text-6xl text-white font-bold text-center pt-6 tracking-wider font-Montserrat">
+          ABOUT{" "}
+          <span className="text-yellow-400 px-2 pr-14 rounded-r-3xl tracking-wider">
+            US
+          </span> </h1>
 
           <div className="bg-[#000000ad] text-white p-8 rounded-lg shadow-lg max-w-6xl w-full z-10">
             <h2 className="text-5xl tracking-wider py-10 font-bold mb-10 text-center text-gray-200">
