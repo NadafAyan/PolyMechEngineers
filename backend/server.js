@@ -19,7 +19,7 @@ const client = require("twilio")(accountSid, authToken);
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: "https://polymechengineers.vercel.app/",
+  origin: "https://polymechengineers.vercel.app",
   methods: ["POST"],
   credentials: true,
 }));
