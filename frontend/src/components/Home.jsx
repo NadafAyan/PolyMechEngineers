@@ -11,6 +11,7 @@ import graphite3 from '../assets/Graphite images/graphite bg removed 3 1.png';
 import graphite4 from '../assets/Graphite images/graphite bg removed 4 1.png';
 
 import GraphiteVsCopper from "./GraphiteVsCopper";
+import GraphiteInfo from './GraphiteInfo';
 
 const Home = () => {
 
@@ -80,6 +81,7 @@ const Home = () => {
         </div>
       </div>
       <GraphiteVsCopper/>
+      <GraphiteInfo/>
     </motion.div>
   );
 };
