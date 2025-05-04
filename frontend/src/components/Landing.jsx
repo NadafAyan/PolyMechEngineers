@@ -26,7 +26,7 @@ const Landing = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#EEF6FA] min-h-screen overflow-y-scroll"
+          className="bg-[#EEF6FA] min-h-screen overflow-hidden"
         >
           <title>Welcome to PolyMech Engineers</title>
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>

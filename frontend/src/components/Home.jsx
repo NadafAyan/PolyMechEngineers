@@ -10,6 +10,8 @@ import graphite2 from '../assets/landingPage/trode.png';
 import graphite3 from '../assets/Graphite images/graphite bg removed 3 1.png';
 import graphite4 from '../assets/Graphite images/graphite bg removed 4 1.png';
 
+import GraphiteVsCopper from "./GraphiteVsCopper";
+
 const Home = () => {
 
   // useEffect(() => {
@@ -62,7 +64,7 @@ const Home = () => {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-5">
-            <span className="font-montserrat bg-[#feb602] px-4 py-2 text-6xl rounded-l-2xl pl-14 font-bold tracking-wider z-10">
+            <span className="font-montserrat bg-[#feb602]  px-4 py-2 text-6xl rounded-l-2xl pl-14 font-bold tracking-wider z-10">
               PRECISION
             </span>
             <h1 className="font-montserrat text-6xl font-bold tracking-wider z-10">
@@ -77,6 +79,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <GraphiteVsCopper/>
     </motion.div>
   );
 };

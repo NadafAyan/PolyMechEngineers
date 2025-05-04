@@ -2,5 +2,16 @@
 
 body {
     overflow-x: hidden !important;
+    font-family: "Montserrat", sans-serif;
   }
+
+  /* In your global CSS or Tailwind layer */
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
   
