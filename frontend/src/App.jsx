@@ -13,6 +13,7 @@ import Landing from "./components/Landing";
 import Gallery from './components/Gallery';
 import Footer from "./components/Footer";
 import ChatBot from './components/ChatBot';
+// import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <>
+      {/* <ScrollToTop /> */}
       <NavBar />
       <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>

@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React, useState ,useEffect} from "react";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
@@ -38,7 +38,9 @@ const Contact = () => {
       body: JSON.stringify(form),
     });
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

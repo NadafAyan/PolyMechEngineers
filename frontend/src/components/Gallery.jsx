@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { motion } from "framer-motion";
 
 // Image imports (1 to 25)
@@ -66,6 +66,9 @@ const mediaItems = [
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

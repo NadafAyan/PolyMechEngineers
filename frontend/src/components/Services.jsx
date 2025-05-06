@@ -14,14 +14,18 @@ const Services = () => {
     WebkitTextStrokeColor: "white",
   };
 
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.5 }}
-      className="bg-[#EEF6FA] min-h-screen overflow-hidden"
-    >
+useEffect(() => {
+  window.scrollTo(0, 0); // Scroll to the top of the page
+}, []);
+
+return (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.5 }}
+    className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+  >
       <title>Services | PolyMech Engineers</title>
       <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28">
         <h1 className="text-6xl font-bold text-center pt-6 mb-10">
@@ -32,7 +36,7 @@ const Services = () => {
         </h1>
 
         <div className="grid grid-row-3 gap-y-5">
-        <div className="grid grid-cols-5 gap-4">
+          <div className="grid grid-cols-5 gap-4">
             {/* row 1 */}
             {/* col 1 */}
             <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  col-span-2 transition-all duration-500 hover:scale-103">
@@ -199,7 +203,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          
+
           {/* row 3 */}
           <div className="grid grid-cols-2 gap-4">
             {/* col 1 */}
@@ -276,16 +280,16 @@ const Services = () => {
 
               <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
                 <p className="text-white text-xl font-medium">
-                <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-xl font-medium">
-                  Drive excellence in automotive performance with our
-                  meticulously crafted sub-assemblies. Engineered to seamlessly
-                  integrate into vehicle systems, our automotive parts
-                  sub-assemblies ensure optimal functionality and reliability.
-                  From engines to transmissions, our precision manufacturing
-                  processes guarantee superior quality and compatibility.
-                </p>
-              </div>
+                  <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                    <p className="text-white text-xl font-medium">
+                      Drive excellence in automotive performance with our
+                      meticulously crafted sub-assemblies. Engineered to seamlessly
+                      integrate into vehicle systems, our automotive parts
+                      sub-assemblies ensure optimal functionality and reliability.
+                      From engines to transmissions, our precision manufacturing
+                      processes guarantee superior quality and compatibility.
+                    </p>
+                  </div>
                 </p>
               </div>
 
