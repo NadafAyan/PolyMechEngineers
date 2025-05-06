@@ -20,6 +20,9 @@ const Landing = () => {
     
     //   return () => clearTimeout(timer);
     // }, []);
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
   return (
     <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import image1 from '../assets/HomePageExtension/1.png';
 import image2 from '../assets/HomePageExtension/2.png';
@@ -7,6 +8,9 @@ import image3 from '../assets/HomePageExtension/3.png';
 
 
 const GraphiteEDMBenefits = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
