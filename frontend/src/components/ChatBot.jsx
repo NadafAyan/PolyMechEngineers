@@ -72,13 +72,18 @@ const Chatbot = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="mt-4 w-[340px] h-[500px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col"
           >
+            {/* Header */}
             <div className="bg-[#1e1e1e] text-white px-6 py-4 text-xl font-semibold">
               PolyMech Assistant
             </div>
 
-            <div className="flex-1 p-4 overflow-y-auto">
+            {/* Scrollable FAQ */}
+            <div
+              className="flex-1 p-4 overflow-y-auto scroll-smooth space-y-4"
+              data-lenis-prevent
+            >
               {faqData.map((item, index) => (
-                <div key={index} className="mb-4">
+                <div key={index}>
                   <button
                     className="text-left text-black font-medium hover:text-yellow-500 focus:outline-none w-full"
                     onClick={() => toggleQuestion(index)}
@@ -93,7 +98,7 @@ const Chatbot = () => {
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="mt-2 text-gray-700 text-sm bg-gray-100 p-3 rounded-lg"
+                        className="mt-2 text-gray-700 text-sm bg-gray-100 p-3 rounded-lg overflow-hidden"
                       >
                         {item.answer}
                       </motion.p>
@@ -103,6 +108,7 @@ const Chatbot = () => {
               ))}
             </div>
 
+            {/* Footer */}
             <div className="bg-[#f9f9f9] text-center p-3 text-sm text-gray-500">
               PolyMech Engineers © 2025
             </div>
