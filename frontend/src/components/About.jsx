@@ -2,6 +2,9 @@ import {React, useEffect} from "react";
 import { motion } from "framer-motion";
 import bgimg from "../assets/Compancy image.jpg";
 
+import ServiceExplanation from "./ServiceExplanation";
+// import ScrollingClient from "./ScrollingClient";
+
 const About = ({ fullHeight = true }) => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
@@ -50,6 +53,8 @@ const About = ({ fullHeight = true }) => {
           </div>
         </div>
       </div>
+      <ServiceExplanation/>
+      {/* <ScrollingClient/> */}
     </motion.div>
   );
 };
