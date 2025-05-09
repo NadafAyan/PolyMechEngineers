@@ -6,6 +6,7 @@ import image3 from "../assets/trode.png";
 import image4 from "../assets/casting.png";
 import image5 from "../assets/landingPage/4.png";
 import image6 from "../assets/homeImage.png";
+import ServiceExplanation from "./ServiceExplanation";
 
 const Services = () => {
   const textStyle = {
@@ -297,6 +298,7 @@ return (
           </div>
         </div>
       </div>
+      <ServiceExplanation />
     </motion.div>
     // </div>
   );
