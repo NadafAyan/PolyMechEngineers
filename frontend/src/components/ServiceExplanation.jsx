@@ -35,7 +35,14 @@ const features = [
 
 export default function FeatureCards() {
   return (
-    <div className="p-6 md:p-12 bg-[#EEF6FA] mt-10">
+    <div className="p-6 md:p-10 bg-[#EEF6FA] mt-">
+      
+        <h1 className="text-6xl font-bold text-center pt-6 mb-10">
+          Why{" "}
+          <span className="bg-yellow-400 px-2 pr-14 rounded-r-3xl">
+            US?
+          </span>
+        </h1>
       <div className="grid md:grid-cols-3 gap-6">
         {features.map((feature, index) => (
           <div

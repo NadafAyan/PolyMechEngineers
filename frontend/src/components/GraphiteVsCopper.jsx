@@ -43,13 +43,14 @@ const GraphiteVsCopper = () => {
 
         <div className="grid grid-cols-3  gap-4 text-center mt-6 mb-8">
           <div className="bg-[#EEF6FA] text-black py-2 px-3 rounded-md font-semibold text-4xl flex justify-center items-center">
-            Faster MRR
+            Faster <br/>
+            MRR
           </div>
           <div className="bg-[#feb602]  text-white py-2 px-3 rounded-md font-semibold text-4xl flex justify-center items-center">
-            Better Surface Finish
+            Better <br/> Surface Finish
           </div>
           <div className="bg-[#EEF6FA] text-black py-2 px-3 rounded-md font-semibold text-4xl flex justify-center items-center">
-            Lower Wear
+            Lower <br/> Wear
           </div>
           <div className="bg-[#feb602] mt-4 text-white py-2 px-3 rounded-md font-semibold col-span-2 sm:col-span-1 text-4xl flex justify-center items-center">
             Increase EDM <br /> Productivity
@@ -67,6 +68,7 @@ const GraphiteVsCopper = () => {
             Graphite Grades Comparison
           </h3> */}
           <div className="overflow-x-auto ">
+            
             <table className="min-w-full table-auto text-sm text-left border">
               <thead>
                 <tr className="bg-gray-200">
