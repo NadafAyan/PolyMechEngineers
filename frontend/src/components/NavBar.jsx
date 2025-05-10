@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-sm border-b border-white/30 shadow-md">
-  <div className="max-w-[1280px] mx-auto w-full flex justify-between items-center px-4 py-3 md:px-10">
+  <div className=" max-w-full mx-auto w-full flex justify-between items-center px-4 py-3">
         <Link to="/" onClick={() => setIsMenuOpen(false)}>
           <img src={logo} alt="PolyMech Engineers" className="h-16 w-auto" />
         </Link>
