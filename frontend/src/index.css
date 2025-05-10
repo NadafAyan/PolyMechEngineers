@@ -3,7 +3,13 @@
 body {
     overflow-x: hidden !important;
     font-family: "Montserrat", sans-serif;
+    
   }
+
+  html, body {
+  overflow-x: hidden;
+}
+
 
   /* In your global CSS or Tailwind layer */
 ::-webkit-scrollbar {
