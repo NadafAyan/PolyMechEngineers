@@ -28,16 +28,31 @@ const Landing = () => {
   <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
 
         {/* Positioned background images (DO NOT CHANGE positions) */}
-        <img
-          // src={graphite1}
-          alt="image"
-          className="absolute top-120 -right-75 -rotate-[73.99deg] z-0 blur-[1.8px]  sm:top-0 sm:left-0"
-        />
-        <img
-          src={graphite2}
-          alt="image"
-          className="absolute -left-87 top-120 rotate-[38deg] blur-[1.8px] sm:top-0 sm:left-0"
-        />
+        {/* Left Image (graphite1) – shifts based on screen size */}
+<img
+  src={graphite1}
+  alt="Left Decoration"
+  className="
+    absolute
+    top-[30rem] left-[10rem] scale-50
+    laptop:top-[30rem] laptop:left-[15rem] laptop:scale-10
+    client:left-[0rem] client:top-[0rem] client:scale-100
+    -rotate-[73.99deg] blur-[1.8px] z-0
+  "
+/>
+
+{/* Right Image (graphite2) – shifts based on screen size */}
+<img
+  src={graphite2}
+  alt="Right Decoration"
+  className="
+    absolute
+    top-[30rem] right-[12rem] scale-50
+    laptop:top-[30rem] laptop:-right-[45.75rem] laptop:scale-100
+    client:top-[30rem] client:-left-[21.75rem] client:scale-100
+    rotate-[38deg] blur-[1.8px] z-0
+  "
+/>
 
         {/* Main content section */}
         <div className="w-full flex justify-center items-center min-h-screen">
