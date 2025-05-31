@@ -2,6 +2,7 @@ import {React, useEffect} from "react";
 import { motion } from "framer-motion";
 import bgimg from "../assets/Compancy image.jpg";
 import OwnerNames from "./OwnerNames";
+import Clients from '../components/Clients';
 //import ServiceExplanation from "./ServiceExplanation";
 // import ScrollingClient from "./ScrollingClient";
 
@@ -66,6 +67,7 @@ const About = ({ fullHeight = true }) => {
           </div>
         </div>
       </div>
+      <Clients />
       <OwnerNames />
      {/* <ServiceExplanation/>*/}
       {/* <ScrollingClient/> */}
