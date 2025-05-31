@@ -1,4 +1,4 @@
-import {React, useEffect} from "react";
+import {React, useEffect, useState,useRef} from "react";
 import { motion } from "framer-motion";
 
 // Image imports (1 to 25)
@@ -129,9 +129,18 @@ const mediaItems = [
 
 
 const Gallery = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
+
+    // Detect mobile screen
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -143,9 +152,9 @@ const Gallery = () => {
       <title>Gallery | PolyMech Engineers</title>
 
       <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28">
-        <h1 className="text-6xl font-bold text-center pt-6 mb-10">
+        <h1 className="font-bold text-center pt-6 mb-10 text-2xl md:text-6xl">
           OUR{" "}
-          <span className="bg-yellow-400 px-2 pr-14 rounded-r-3xl">
+          <span className="bg-yellow-400 px-2 pr-10 rounded-r-3xl md:pr-14">
             GALLERY
           </span>
         </h1>
@@ -165,17 +174,16 @@ const Gallery = () => {
               ) : (
                 <div className="relative">
                   <video
-                    loading="lazy"
                     src={item.src}
                     muted
                     loop
                     playsInline
-                    preload="none"
+                    //preload="none"
+                    autoPlay={isMobile}
                     className="w-full object-cover rounded transition-transform duration-300 hover:scale-105"
-                    onMouseEnter={(e) => e.target.play()}
-                    onMouseLeave={(e) => e.target.pause()}
+                    onMouseEnter={(e) => !isMobile && e.target.play()}
+                    onMouseLeave={(e) => !isMobile && e.target.pause()}
                   />
-
                   <div className="absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full opacity-50 group-hover:opacity-0 transition-opacity duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -187,15 +195,6 @@ const Gallery = () => {
                     </svg>
                   </div>
                 </div>
-                // <video
-                //   src={item.src}
-                //   muted
-                //   loop
-                //   playsInline
-                //   className="w-full object-cover rounded transition-transform duration-300 hover:scale-105"
-                //   onMouseEnter={(e) => e.target.play()}
-                //   onMouseLeave={(e) => e.target.pause()}
-                // />
               )}
             </div>
           ))}
