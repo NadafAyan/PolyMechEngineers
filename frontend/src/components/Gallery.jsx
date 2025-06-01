@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 import img1 from "../assets/GalleryPage/1.jpg";
 import img2 from "../assets/GalleryPage/2.png";
 import img3 from "../assets/GalleryPage/3.jpg";
@@ -51,79 +54,12 @@ import img53 from "../assets/GalleryPage/53.jpg";
 import img54 from "../assets/GalleryPage/54.jpg";
 import img55 from "../assets/GalleryPage/55.jpg";
 import img56 from "../assets/GalleryPage/56.jpg";
-// import img24 from "../assets/GalleryPage/24.jpg";
 
-// Video imports (26 to 28)
 import vid1 from "../assets/GalleryPage/26.mp4";
 import vid2 from "../assets/GalleryPage/27.mp4";
 import vid3 from "../assets/GalleryPage/28.mp4";
 import vid4 from "../assets/GalleryPage/v1.mp4";
 import vid5 from "../assets/GalleryPage/v2.mp4";
-
-// Mixed media array
-const mediaItems = [
-  { type: "image", src: img1 },
-  { type: "image", src: img2 },
-  { type: "image", src: img24 },
-  { type: "video", src: vid1 },
-  { type: "image", src: img4 },
-  { type: "image", src: img40 },
-  { type: "image", src: img7 },
-  { type: "image", src: img8 },
-  { type: "image", src: img9 },
-  { type: "image", src: img10 },
-  { type: "image", src: img11 },
-  { type: "video", src: vid2 },
-  { type: "image", src: img12 },
-  { type: "image", src: img13 },
-  { type: "image", src: img14 },
-  { type: "image", src: img15 },
-  { type: "image", src: img16 },
-  { type: "image", src: img17 },
-  { type: "image", src: img18 },
-  { type: "image", src: img20 },
-  { type: "image", src: img21 },
-  { type: "image", src: img22 },
-  { type: "image", src: img23 },
-  { type: "image", src: img3 },
-  { type: "video", src: vid3 },
-  { type: "image", src: img25 },
-  { type: "image", src: img26 },
-  { type: "image", src: img27 },
-  { type: "image", src: img28 },
-  { type: "image", src: img29 },
-  { type: "image", src: img30 },
-  { type: "image", src: img31 },
-  { type: "image", src: img32 },
-  { type: "video", src: vid4 },
-  { type: "image", src: img34 },
-  { type: "image", src: img35 },
-  { type: "image", src: img36 },
-  { type: "image", src: img37 },
-  { type: "image", src: img38 },
-  { type: "image", src: img39 },
-  { type: "image", src: img6 },
-  { type: "image", src: img44 },
-  // { type: "image", src: img42 },
-  { type: "image", src: img43 },
-  { type: "image", src: img41 },
-  { type: "video", src: vid5 },
-  { type: "image", src: img45 },
-  { type: "image", src: img46 },
-  { type: "image", src: img47 },
-  { type: "image", src: img48 },
-  { type: "image", src: img49 },
-  { type: "image", src: img50 },
-  { type: "image", src: img51 },
-  { type: "image", src: img52 },
-  { type: "image", src: img53 },
-  { type: "image", src: img54 },
-  { type: "image", src: img55 },
-  { type: "image", src: img56 },
-];
-
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 const sections = [
   { id: "products", title: "Products" },
@@ -133,17 +69,60 @@ const sections = [
 ];
 
 const galleryContent = {
-  products: [img3,img47,img49,img50, img2,img6,img7,img53,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img40,img34,img37,img45,img46,img54,img1,img4],
-  machinery: [img38,img39,img44,img43,img35,img36,img41],
-  team: [img55,img56],
-  videos: [vid1,vid2,vid3,vid4,vid5]
+  products: [
+    img3,
+    img47,
+    img49,
+    img50,
+    img2,
+    img6,
+    img7,
+    img53,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    img18,
+    img20,
+    img21,
+    img22,
+    img23,
+    img24,
+    img25,
+    img26,
+    img27,
+    img28,
+    img29,
+    img30,
+    img31,
+    img32,
+    img40,
+    img34,
+    img37,
+    img45,
+    img46,
+    img54,
+    img1,
+    img4,
+  ],
+  machinery: [img38, img39, img44, img43, img35, img36, img41],
+  team: [img55, img56],
+  videos: [vid1, vid2, vid3, vid4, vid5],
 };
 
 const Gallery = () => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSections, setActiveSections] = useState([]);
 
   const toggleSection = (id) => {
-    setActiveSection((prev) => (prev === id ? null : id));
+    setActiveSections((prev) =>
+      prev.includes(id) ? prev.filter((s) => s !== id) : [...prev, id]
+    );
   };
 
   return (
@@ -162,7 +141,7 @@ const Gallery = () => {
         </span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
         {sections.map((section) => (
           <div key={section.id}>
             <motion.div
@@ -173,7 +152,7 @@ const Gallery = () => {
             </motion.div>
 
             <AnimatePresence>
-              {activeSection === section.id && (
+              {activeSections.includes(section.id) && (
                 <motion.div
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
@@ -181,25 +160,35 @@ const Gallery = () => {
                   transition={{ duration: 0.4 }}
                   className="mt-4 bg-white rounded-md shadow-inner overflow-hidden"
                 >
-                  <div className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                  <div className="p-4 columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
                     {galleryContent[section.id].length === 0 ? (
-                      <div className="col-span-full text-center text-gray-500">
+                      <div className="text-center text-gray-500">
                         No items to show yet.
                       </div>
                     ) : (
                       galleryContent[section.id].map((item, index) => (
-                        <div key={index}>
+                        <div
+                          key={index}
+                          className="break-inside-avoid mb-4 rounded-lg overflow-hidden shadow-sm"
+                        >
                           {item.includes("mp4") ? (
                             <video
                               src={item}
-                              controls
-                              className="w-full h-auto rounded-lg shadow-sm"
+                              muted
+                              loop
+                              playsInline
+                              onMouseEnter={(e) => e.target.play()}
+                              onMouseLeave={(e) => {
+                                e.target.pause();
+                                e.target.currentTime = 0;
+                              }}
+                              className="w-full h-auto rounded-lg transition duration-300 hover:scale-[1.02]"
                             />
                           ) : (
                             <img
                               src={item}
                               alt={`Gallery item ${index + 1}`}
-                              className="w-full h-auto rounded-lg shadow-sm"
+                              className="w-full h-auto rounded-lg"
                             />
                           )}
                         </div>
