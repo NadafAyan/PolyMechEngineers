@@ -17,15 +17,16 @@ const GraphiteVsCopper = () => {
         className="flex flex-col justify-center items-start pl-6 gap-2 pt-18"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
-        <h3 className="font-montserrat text-3xl md:text-5xl font-semibold tracking-wider">
+        <h3 className="font-montserrat text-2xl md:text-5xl font-semibold tracking-wider">
           ARE YOU STILL USING
         </h3>
-        <span className="bg-[#feb602] text-white py-1 pl-1.5 md:pr-8 rounded-r-xl md:text-5xl text-3xl font-semibold tracking-wider">
+        <span className="bg-[#feb602] text-white py-1 pl-1.5 md:pr-8 mr-4 rounded-r-xl md:text-5xl text-2xl font-semibold tracking-wider">
           COPPER ELECTRODES?
         </span>
       </div>
 
-      <div className="mt-10 w-fit flex flex-col items-start text-md py-4 md:text-4xl font-semibold bg-black text-white  md:px-4 md:py-2 rounded-l-2xl pl-12 ml-auto">
+      <div className="mt-10 w-fit flex text-sm flex-col items-start text-md py-2 md:text-4xl font-semibold bg-black
+       text-white  md:px-4 md:py-2 rounded-l-2xl pl-8 ml-auto">
         <p>WHY DON’T SAVE 50% OF ELECTRODE COSTS</p>
         <p>WITH GRAPHITE ELECTRODES!</p>
       </div>

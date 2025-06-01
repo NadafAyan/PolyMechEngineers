@@ -37,9 +37,9 @@ export default function FeatureCards() {
   return (
     <div className="p-6 md:p-10 bg-[#EEF6FA] mt-">
       
-        <h1 className="text-6xl font-bold text-center pt-6 mb-10">
+        <h1 className="md:text-6xl text-4xl font-bold text-center pt-6 mb-10">
           Why{" "}
-          <span className="bg-yellow-400 px-2 pr-14 rounded-r-3xl">
+          <span className="bg-[#feb602] px-2 pr-14 rounded-r-3xl">
             US?
           </span>
         </h1>

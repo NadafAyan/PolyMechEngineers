@@ -29,18 +29,18 @@ return (
   >
       <title>Services | PolyMech Engineers</title>
       <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28">
-        <h1 className="text-6xl font-bold text-center pt-6 mb-10">
+        <h1 className="md:text-6xl text-3xl font-bold text-center pt-6 mb-10">
           OUR{" "}
-          <span className="bg-yellow-400 px-2 pr-14 rounded-r-3xl">
+          <span className="bg-[#feb602] px-2 md:pr-14 pr-8 rounded-r-3xl">
             PRODUCTS
           </span>
         </h1>
 
-        <div className="grid grid-row-3 gap-y-5">
-          <div className="grid grid-cols-5 gap-4">
+        <div className="grid md:grid-row-3 grid-row-6 gap-y-5">
+          <div className="grid md:grid-cols-5 gap-4">
             {/* row 1 */}
             {/* col 1 */}
-            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  col-span-2 transition-all duration-500 hover:scale-103">
+            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  md:col-span-2 transition-all duration-500 hover:scale-103">
               <img
                 src={image3}
                 alt="prototypes"
@@ -49,7 +49,7 @@ return (
               />
 
               <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-33%]">
-                <p className="text-white text-8xl font-bold text-center z-0">
+                <p className="text-white md:text-8xl text-5xl font-bold text-center z-0">
                   Graphite Electrode
                 </p>
               </div>
@@ -58,7 +58,7 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-20"
                 style={textStyle}
               >
-                <p className="absolute text-transparent border-2 text-8xl font-bold text-center z-20 transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-74.5%]">
+                <p className="absolute text-transparent border-2 md:text-8xl text-5xl font-bold text-center z-20 transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-74.5%]">
                   Graphite Electrode
                 </p>
               </div>
@@ -81,7 +81,7 @@ return (
             </div>
 
             {/* col 2 */}
-            <div className="relative bg-black rounded-2xl h-110 overflow-hidden col-span-3 group transition-all duration-500 delay-300 hover:scale-103">
+            <div className="relative bg-black rounded-2xl h-110 overflow-hidden md:col-span-3 group transition-all duration-500 delay-300 hover:scale-103">
               <img
                 src={image4}
                 alt="prototypes"
@@ -93,7 +93,7 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-0 group transition-all duration-500 delay-300 group-hover:scale-85 
               group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
               >
-                <p className="text-white text-7xl font-bold text-center">
+                <p className="text-white md:text-6xl text-5xl font-bold text-center">
                   Casting Components
                 </p>
               </div>
@@ -103,7 +103,7 @@ return (
               group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
                 style={textStyle}
               >
-                <p className="text-transparent border-2 text-7xl font-bold text-center">
+                <p className="text-transparent border-2 md:text-6xl text-5xl font-bold text-center">
                   Casting Components
                 </p>
               </div>
@@ -121,7 +121,7 @@ return (
           </div>
 
           {/* row 2 */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             {/* col 1 */}
             <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300 transition-all duration-500 hover:scale-103">
               <img
@@ -132,13 +132,13 @@ return (
               />
 
               <div className="absolute inset-0 flex items-center justify-center group">
-                <p className="text-white text-7xl font-bold text-center z-0 delay-300 transition-all duration-500 group-hover:translate-x-[35%] group-hover:translate-y-[-200%]">
+                <p className="text-white md:text-7xl text-5xl font-bold text-center z-0 delay-300 transition-all duration-500 group-hover:translate-x-[35%] group-hover:translate-y-[-200%]">
                   Prototypes
                 </p>
 
                 <p
                   style={textStyle}
-                  className="absolute text-transparent border-2 text-7xl font-bold text-center z-20 delay-300 transition-all duration-500 group-hover:translate-x-[34.6%] group-hover:translate-y-[-190%]"
+                  className="absolute text-transparent border-2 md:text-7xl text-5xl font-bold text-center z-20 delay-300 transition-all duration-500 group-hover:translate-x-[34.6%] group-hover:translate-y-[-190%]"
                 >
                   Prototypes
                 </p>
@@ -206,7 +206,7 @@ return (
           </div>
 
           {/* row 3 */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             {/* col 1 */}
             <div className="relative bg-black h-110 rounded-2xl overflow-hidden group transition-all duration-500 delay-300 hover:scale-103">
               <img
@@ -220,7 +220,7 @@ return (
                 className="absolute inset-0 group-hover:scale-70 flex items-center justify-center z-0 transition-all duration-500 delay-300
               group-hover:translate-x-[15%] group-hover:translate-y-[-30%]"
               >
-                <p className="text-white text-7xl font-bold text-center">
+                <p className="text-white md:text-7xl text-5xl font-bold text-center">
                   Automotive Parts
                 </p>
               </div>
@@ -230,7 +230,7 @@ return (
               group-hover:translate-x-[15%] group-hover:translate-y-[-30%] group-hover:scale-70"
                 style={textStyle}
               >
-                <p className="text-transparent border-2 text-7xl font-bold text-center">
+                <p className="text-transparent border-2 md:text-7xl text-5xl font-bold text-center">
                   Automotive Parts
                 </p>
               </div>
@@ -264,7 +264,7 @@ return (
 
               <div className="absolute inset-0 flex items-center justify-center z-0 transition-all duration-500 delay-300 group-hover:scale-65
               group-hover:translate-x-[16%] group-hover:translate-y-[-28%]">
-                <p className="text-white text-6xl font-bold text-center">
+                <p className="text-white md:text-6xl text-5xl font-bold text-center">
                   Aluminium Components
                 </p>
               </div>
@@ -274,7 +274,7 @@ return (
               group-hover:translate-x-[16%] group-hover:translate-y-[-28%]"
                 style={textStyle}
               >
-                <p className="text-transparent border-2 text-6xl font-bold text-center">
+                <p className="text-transparent border-2 md:text-6xl text-5xl font-bold text-center">
                   Aluminium Components
                 </p>
               </div>
