@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
-import image1 from '../assets/HomePageExtension/1.png';
-import image2 from '../assets/HomePageExtension/2.png';
-import image3 from '../assets/HomePageExtension/3.png';
-
+import image1 from "../assets/HomePageExtension/1.png";
+import image2 from "../assets/HomePageExtension/2.png";
+import image3 from "../assets/HomePageExtension/3.png";
 
 const GraphiteEDMBenefits = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
   }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -18,63 +17,62 @@ const GraphiteEDMBenefits = () => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="w-full mx-auto p-6 space-y-6 bg-[#EEF6FA]  shadow-lg">
+      <div className="w-full mx-auto px-4 sm:px-8 py-10 space-y-10 bg-[#EEF6FA]">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-            Why use <span className="text-[#feb602]">graphite for EDM?</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 tracking-wide">
+            Why use <span className="text-yellow-400">graphite for EDM?</span>
           </h2>
         </div>
 
         {/* Section 1 */}
-        <div className="flex flex-col sm:flex-row bg-black text-white rounded-lg  p-6 gap-4 items-center z-0">
-          <img
-            src={image3} 
-            alt="Electrode example"
-            className="w-32 h-32 object-cover rounded scale-155 z-10 -translate-y-[20%] ml-[2.5px]"
-          />
-          <p className="text-sm sm:text-base leading-relaxed">
-            Graphite is being widely used in EDM mould making because of the
-            following key advantages. Due to low wear it is time and cost
-            effective. Easier machining with less complex milling tools. Perfect
-            for high quality surface finishes and provides a high metal removal
-            rate. It does not melt but sublimes (turns from a solid to a gas) at
-            very high temperatures of 3400°C. It is five times less dense than
-            Copper which means lighter electrodes. It is very resistant to
-            thermal shock and can withstand high temperatures.
+        <div className="flex flex-col md:flex-row items-center gap-6 bg-black text-white p-6 rounded-xl shadow-md">
+          <div className="shrink-0">
+            <img
+              src={image3}
+              alt="Graphite EDM Benefit"
+              className="w-32 sm:w-40 md:w-44 object-cover rounded-xl"
+            />
+          </div>
+          <p className="text-base sm:text-lg leading-relaxed text-justify">
+            Graphite is widely used in EDM mould making due to its low wear and
+            cost efficiency. It’s easier to machine, supports high-quality
+            finishes, and offers a high metal removal rate. Unlike copper,
+            graphite sublimates at 3400°C, is 5x lighter, resists thermal shock,
+            and handles high temperatures with stability.
           </p>
         </div>
 
         {/* Section 2 */}
-        <div className="flex flex-col sm:flex-row bg-yellow-400 text-white rounded-lg p-6 gap-4 items-center">
-          <p className="text-sm sm:text-base leading-relaxed text-black font-medium">
-            At Polymech Engineers we guarantee only the finest selection of raw
-            materials and ensure the precise control of production resources to
-            provide unparalleled performance. Our graphite offers advantages
-            which set it apart from the crowd. Due to its low coefficient of
-            thermal expansion, geometric stability at high temperatures is
-            guaranteed. The mechanical strength remains unaltered at high
-            temperatures.
+        <div className="flex flex-col md:flex-row-reverse items-center gap-6 bg-[#feb602] text-black p-6 rounded-xl shadow-md">
+          <div className="shrink-0">
+            <img
+              src={image2}
+              alt="Graphite Quality"
+              className="w-32 sm:w-40 md:w-44 object-cover rounded-xl"
+            />
+          </div>
+          <p className="text-base sm:text-lg leading-relaxed text-justify font-medium">
+            At PolyMech Engineers, we use only the finest graphite materials with
+            precise production control. Our graphite ensures low thermal
+            expansion, excellent dimensional stability, and maintains mechanical
+            strength even at high temperatures.
           </p>
-          <img
-            src={image2}
-            alt="Graphite part"
-            className="w-32 h-32 object-cover scale-145 rounded -translate-y-[10%]"
-          />
         </div>
 
         {/* Section 3 */}
-        <div className="flex flex-col sm:flex-row bg-black text-white rounded-lg p-6 gap-4 items-center">
-          <img
-            src={image1} // Replace with actual path
-            alt="EDM part"
-            className="w-38 h-32 object-fill rounded scale-125 -translate-y-[25%]"
-          />
-          <p className="text-sm sm:text-base leading-relaxed">
-            Because of its ability to create precise and unique shapes EDM is
-            the choice for many industries. We offer tailored Die & Mold
-            solutions to industries like automobile, aerospace, appliances etc.,
-            creating very complex dies/shapes with extreme accuracy.
+        <div className="flex flex-col md:flex-row items-center gap-6 bg-black text-white p-6 rounded-xl shadow-md">
+          <div className="shrink-0">
+            <img
+              src={image1}
+              alt="Precision EDM Shape"
+              className="w-32 sm:w-40 md:w-44 object-cover rounded-xl"
+            />
+          </div>
+          <p className="text-base sm:text-lg leading-relaxed text-justify">
+            EDM enables the creation of complex, precise shapes ideal for
+            industries like automotive, aerospace, and appliances. We deliver
+            custom die & mold solutions with accuracy and reliability.
           </p>
         </div>
       </div>
