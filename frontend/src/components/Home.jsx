@@ -41,12 +41,12 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-2 sm:gap-4 px-2 sm:px-4"
+            className="flex flex-col md:flex-row flex-wrap justify-center mt-12 items-center gap-2 sm:gap-4 px-2 sm:px-4"
           >
             <span className="font-montserrat bg-[#feb602] px-4 py-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl rounded-l-2xl font-bold tracking-wide z-10">
               PRECISION
             </span>
-            <h1 className="font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide z-10 text-center md:text-left mt-2 md:mt-0">
+            <h1 className="font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold tracking-wide z-10 text-center md:text-left mt-2 md:mt-0">
               EDM GRAPHITE ELECTRODE
             </h1>
           </motion.div>
