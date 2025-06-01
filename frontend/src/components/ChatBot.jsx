@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqData = [
@@ -46,9 +46,29 @@ const faqData = [
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640); // Tailwind sm breakpoint
+
+  // Update isMobile on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const toggleQuestion = (index) => {
     setSelected(selected === index ? null : index);
+  };
+
+  // Determine button text based on open state and screen size
+  const buttonText = () => {
+    if (isMobile) {
+      return isOpen ? "X" : "Help";
+    } else {
+      return isOpen ? "Close Chat" : "Need Help?";
+    }
   };
 
   return (
@@ -58,8 +78,9 @@ const Chatbot = () => {
         whileHover={{ scale: 1.05 }}
         className="bg-yellow-400 text-black font-bold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close chat" : "Open chat"}
       >
-        {isOpen ? "Close Chat" : "Need Help?"}
+        {buttonText()}
       </motion.button>
 
       <AnimatePresence>
