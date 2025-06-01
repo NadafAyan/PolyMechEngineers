@@ -1,6 +1,4 @@
 import React from "react";
-
-// Client logo imports
 import img1 from "../assets/Clients/Aequs.jpg";
 import img2 from "../assets/Clients/Alkop.jpg";
 import img3 from "../assets/Clients/Elcom.jpg";

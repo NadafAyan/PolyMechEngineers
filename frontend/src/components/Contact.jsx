@@ -50,12 +50,15 @@ const Contact = () => {
     >
       <div className="bg-[#EEF6FA] min-h-screen px-4 sm:px-6 lg:px-10 py-10 pt-28">
         <title>Contact us | PolyMech Engineers</title>
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-center pt-6 tracking-wider font-Montserrat">
-          CONTACT
-          <span className="text-yellow-400 px-2 pr-6 md:pr-14 rounded-r-3xl tracking-wider">
-            US
-          </span>
-        </h1>
+        <div className="flex justify-center text-center">
+  <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold pt-6 tracking-wider font-Montserrat">
+    CONTACT
+    <span className="text-yellow-400 px-2 md:px-4 lg:px-6 rounded-r-3xl tracking-wider">
+      US
+    </span>
+  </h1>
+</div>
+
 
         <div className="bg-[#1e1e1ec7] text-white rounded-lg p-6 md:p-10 lg:p-16 flex flex-col lg:flex-row justify-between gap-10 mt-10">
           {/* Form */}
