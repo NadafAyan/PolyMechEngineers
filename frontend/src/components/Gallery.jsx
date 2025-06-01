@@ -1,7 +1,3 @@
-import {React, useEffect, useState,useRef} from "react";
-import { motion } from "framer-motion";
-
-// Image imports (1 to 25)
 import img1 from "../assets/GalleryPage/1.jpg";
 import img2 from "../assets/GalleryPage/2.png";
 import img3 from "../assets/GalleryPage/3.jpg";
@@ -56,7 +52,6 @@ import img54 from "../assets/GalleryPage/54.jpg";
 import img55 from "../assets/GalleryPage/55.jpg";
 import img56 from "../assets/GalleryPage/56.jpg";
 // import img24 from "../assets/GalleryPage/24.jpg";
-
 
 // Video imports (26 to 28)
 import vid1 from "../assets/GalleryPage/26.mp4";
@@ -127,19 +122,29 @@ const mediaItems = [
   { type: "image", src: img56 },
 ];
 
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const sections = [
+  { id: "machinery", title: "Machinery" },
+  { id: "products", title: "Products" },
+  { id: "videos", title: "Videos" },
+  { id: "team", title: "Team Members" },
+];
+
+const galleryContent = {
+  machinery: [img1,img2],
+  products: [],
+  videos: [vid1],
+  team: [],
+};
 
 const Gallery = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
-
-    // Detect mobile screen
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+  const toggleSection = (id) => {
+    setActiveSection((prev) => (prev === id ? null : id));
+  };
 
   return (
     <motion.div
@@ -147,58 +152,65 @@ const Gallery = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+      className="bg-[#EEF6FA] min-h-screen overflow-hidden px-4 pt-28 pb-10"
     >
       <title>Gallery | PolyMech Engineers</title>
+      <h1 className="font-bold text-center mb-10 text-2xl md:text-6xl">
+        OUR{" "}
+        <span className="bg-yellow-400 px-2 pr-10 rounded-r-3xl md:pr-14">
+          GALLERY
+        </span>
+      </h1>
 
-      <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28">
-        <h1 className="font-bold text-center pt-6 mb-10 text-2xl md:text-6xl">
-          OUR{" "}
-          <span className="bg-yellow-400 px-2 pr-10 rounded-r-3xl md:pr-14">
-            GALLERY
-          </span>
-        </h1>
-
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 px-4">
-          {mediaItems.map((item, index) => (
-            <div
-              key={index}
-              className="break-inside-avoid rounded overflow-hidden shadow-lg"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {sections.map((section) => (
+          <div key={section.id}>
+            <motion.div
+              onClick={() => toggleSection(section.id)}
+              className="cursor-pointer bg-white rounded-xl shadow-md p-6 text-center text-xl font-semibold hover:scale-105 transition-transform duration-300"
             >
-              {item.type === "image" ? (
-                <img
-                  src={item.src}
-                  alt={`Gallery item ${index + 1}`}
-                  className="w-full object-cover rounded"
-                />
-              ) : (
-                <div className="relative">
-                  <video
-                    src={item.src}
-                    muted
-                    loop
-                    playsInline
-                    //preload="none"
-                    autoPlay={isMobile}
-                    className="w-full object-cover rounded transition-transform duration-300 hover:scale-105"
-                    onMouseEnter={(e) => !isMobile && e.target.play()}
-                    onMouseLeave={(e) => !isMobile && e.target.pause()}
-                  />
-                  <div className="absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full opacity-50 group-hover:opacity-0 transition-opacity duration-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
+              {section.title}
+            </motion.div>
+
+            <AnimatePresence>
+              {activeSection === section.id && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="mt-4 bg-white rounded-md shadow-inner overflow-hidden"
+                >
+                  <div className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    {galleryContent[section.id].length === 0 ? (
+                      <div className="col-span-full text-center text-gray-500">
+                        No items to show yet.
+                      </div>
+                    ) : (
+                      galleryContent[section.id].map((item, index) => (
+                        <div key={index}>
+                          {item.includes("mp4") ? (
+                            <video
+                              src={item}
+                              controls
+                              className="w-full h-auto rounded-lg shadow-sm"
+                            />
+                          ) : (
+                            <img
+                              src={item}
+                              alt={`Gallery item ${index + 1}`}
+                              className="w-full h-auto rounded-lg shadow-sm"
+                            />
+                          )}
+                        </div>
+                      ))
+                    )}
                   </div>
-                </div>
+                </motion.div>
               )}
-            </div>
-          ))}
-        </div>
+            </AnimatePresence>
+          </div>
+        ))}
       </div>
     </motion.div>
   );
