@@ -126,17 +126,17 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const sections = [
-  { id: "machinery", title: "Machinery" },
   { id: "products", title: "Products" },
+  { id: "machinery", title: "Machinery" },
+  { id: "team", title: "Team" },
   { id: "videos", title: "Videos" },
-  { id: "team", title: "Team Members" },
 ];
 
 const galleryContent = {
-  machinery: [img1,img2],
-  products: [],
-  videos: [vid1],
-  team: [],
+  products: [img3,img47,img49,img50, img2,img6,img7,img53,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img40,img34,img37,img45,img46,img54,img1,img4],
+  machinery: [img38,img39,img44,img43,img35,img36,img41],
+  team: [img55,img56],
+  videos: [vid1,vid2,vid3,vid4,vid5]
 };
 
 const Gallery = () => {
@@ -162,7 +162,7 @@ const Gallery = () => {
         </span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {sections.map((section) => (
           <div key={section.id}>
             <motion.div
