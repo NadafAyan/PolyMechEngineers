@@ -34,8 +34,10 @@ const Landing = () => {
           <title>Welcome to PolyMech Engineers</title>
     <div className='relative bg-[#EEF6FA] min-h-screen overflow-hidden'>
 
-        <img src={graphite1} alt="image" className="absolute top-120 -right-75 -rotate-[73.99deg] z-0 blur-[1.8px]" />
-        <img src={graphite2} alt="image" className='absolute -left-87 top-120 rotate-[38deg] blur-[1.8px]'/>
+        <img src={graphite1} alt="image" className="absolute md:top-120 md:-right-75 md:-rotate-[73.99deg] z-0 blur-[1.8px]
+        top-140 -right-55 -rotate-[73.99deg]  md:z-0" />
+        <img src={graphite2} alt="image" className='absolute md:-left-87 md:top-120 md:rotate-[38deg] blur-[1.8px] z-0
+        top-140 scale-60 rotate-[38deg] -left-60'/>
 
 
         <div className='w-full flex justify-center items-center min-h-screen'>
@@ -44,7 +46,7 @@ const Landing = () => {
             <img src={Text} alt="Text" className=''/>
             
             <Link to="/home">
-            <button className="bg-black text-white text-2xl font-semibold px-12 py-4 rounded-3xl hover:bg-gray-800 transition mt-24">
+            <button className="bg-black text-white text-2xl font-semibold px-12 py-4 rounded-3xl z-1 hover:bg-gray-800 transition mt-24">
               Get Started
             </button>
           </Link>
