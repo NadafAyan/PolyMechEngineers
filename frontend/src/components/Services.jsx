@@ -40,7 +40,7 @@ return (
           <div className="grid md:grid-cols-5 gap-4">
             {/* row 1 */}
             {/* col 1 */}
-            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  md:col-span-2 transition-all duration-500 hover:scale-103">
+            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300  md:col-span-2 transition-all duration-500md:hoverscale-103">
               <img
                 src={image3}
                 alt="prototypes"
@@ -81,7 +81,7 @@ return (
             </div>
 
             {/* col 2 */}
-            <div className="relative bg-black rounded-2xl h-110 overflow-hidden md:col-span-3 group transition-all duration-500 delay-300 hover:scale-103">
+            <div className="relative bg-black rounded-2xl h-110 overflow-hidden md:col-span-3 group transition-all duration-500 delay-300md:hoverscale-103">
               <img
                 src={image4}
                 alt="prototypes"
@@ -123,7 +123,7 @@ return (
           {/* row 2 */}
           <div className="grid md:grid-cols-2 gap-4">
             {/* col 1 */}
-            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300 transition-all duration-500 hover:scale-103">
+            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300 transition-all duration-500md:hoverscale-103">
               <img
                 src={image1}
                 alt="prototypes"
@@ -163,7 +163,7 @@ return (
             </div>
 
             {/* col 2 */}
-            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300 transition-all duration-500 hover:scale-103">
+            <div className="relative bg-black rounded-2xl overflow-hidden h-110 group delay-300 transition-all duration-500md:hoverscale-103">
               <img
                 src={image2}
                 alt="prototypes"
@@ -208,7 +208,7 @@ return (
           {/* row 3 */}
           <div className="grid md:grid-cols-2 gap-4">
             {/* col 1 */}
-            <div className="relative bg-black h-110 rounded-2xl overflow-hidden group transition-all duration-500 delay-300 hover:scale-103">
+            <div className="relative bg-black h-110 rounded-2xl overflow-hidden group transition-all duration-500 delay-300md:hoverscale-103">
               <img
                 src={image5}
                 alt="prototypes"
@@ -254,7 +254,7 @@ return (
             </div>
 
             {/* col 2 */}
-            <div className="relative bg-black h-110 rounded-2xl overflow-hidden group transition-all duration-500 delay-300 hover:scale-103">
+            <div className="relative bg-black h-110 rounded-2xl overflow-hidden group transition-all duration-500 delay-300md:hoverscale-103">
               <img
                 src={image6}
                 alt="prototypes"
