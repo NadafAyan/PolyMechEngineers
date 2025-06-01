@@ -11,108 +11,103 @@ import logo from "../assets/landingPage/Logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-white text-gray-800 pt-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center mb-10">
-          <img
-            src={logo}
-            alt="PolyMech Engineers"
-            className="h-16 sm:h-20 w-auto"
-          />
-        </div>
+    <div className="bg-white text-gray-800 px-0 pt-10">
+      {/* Logo in Center */}
+      <div className="flex-1 text-center">
+        <img
+          src={logo}
+          alt="PolyMech Engineers"
+          className="h-18 w-auto mx-auto"
+        />
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <FaMapMarkerAlt size={20} className="text-yellow-400 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-bold">Address</h3>
-                <a
-                  href="https://www.google.com/maps/place/Polymech+Engineers/@16.712985,74.449895,21z/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-yellow-500 transition-colors duration-300"
-                >
+      <div className="flex flex-col md:flex-row px-5 md:px-15 lg:px-25 xl:px-35 w-full mt-10  justify-between gap-10 sm:justify-center ">
+        <div className="flex-1 space-y-6 mt-0  ">
+          {/* Info */}
+          <div className="flex items-start gap-4  ">
+            <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1" />
+            <div>
+              <h3 className="text-xl font-bold">Address</h3>
+              <a
+                href="https://www.google.com/maps/place/Polymech+Engineers/@16.712985,74.449895,21z/data=!4m6!3m5!1s0x3bc11d75abee1e31:0x60ba7aa36bc161e3!8m2!3d16.7129848!4d74.4498953!16s%2Fg%2F11fz0tvdts?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="hover:text-yellow-500 transition ">
                   Industrial Estate 22/68 Ganesh nagar 9th lane, Ichalkaranji
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <FaEnvelope size={20} className="text-yellow-400 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-bold">Email</h3>
-                <p>polymecheng@gmail.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <FaPhoneAlt size={20} className="text-yellow-400 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-bold">Contact</h3>
-                <p>Tel: +91 9665756396, +91 9422582439</p>
-              </div>
+                </p>
+              </a>
             </div>
           </div>
-
-          {/* Social Media */}
-          <div className="flex flex-col items-center justify-center text-center">
-            <h3 className="text-xl font-bold mb-6">Follow Us</h3>
-            <div className="flex gap-6">
-              <a
-                href="https://x.com/polymecheng"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform duration-300"
-              >
-                <FaTwitter className="text-black hover:text-yellow-400 transition-colors" size={24} />
-              </a>
-              <a
-                href="https://www.instagram.com/polymech_engineers/profilecard/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform duration-300"
-              >
-                <FaInstagram className="text-black hover:text-yellow-400 transition-colors" size={24} />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/polymech-engineers/about/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform duration-300"
-              >
-                <FaLinkedinIn className="text-black hover:text-yellow-400 transition-colors" size={24} />
-              </a>
+          <div className="flex items-start gap-4">
+            <FaEnvelope size={24} className="text-yellow-400 mt-1" />
+            <div>
+              <h3 className="text-xl font-bold">Email</h3>
+              <p>polymecheng@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <FaPhoneAlt size={24} className="text-yellow-400 mt-1" />
+            <div>
+              <h3 className="text-xl font-bold">Contact</h3>
+              <p>Tel: +91 9665756396, +91 9422582439</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-black text-white py-4 text-center text-sm">
-          <p className="mb-2">
-            Copyright © 2025 | All Rights Reserved by PolyMech Engineers. ® ISO 9001 Certified Company
-          </p>
-          <p>
-            Developed by{" "}
+       
+        {/* Social Media */}
+        <div className="flex-1 flex flex-col items-center justify-center text-center">
+          <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
+          <div className="flex gap-6">
             <a
-              href="https://www.linkedin.com/in/ayan-nadaf-8119462ba/"
-              className="hover:text-yellow-400 transition-colors"
+              href="https://x.com/polymecheng"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Ayan
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://www.linkedin.com/in/vaibhav-t-793173277/"
-              className="hover:text-yellow-400 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Vaibhav
+              <FaTwitter className="text-black hover:text-yellow-400 transition" size={24} />
             </a>
-          </p>
+            <a
+              href="https://www.instagram.com/polymech_engineers/profilecard/?igsh=NTd1bDVxeGM5eXJ0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-black hover:text-yellow-400 transition" size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/polymech-engineers/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="text-black hover:text-yellow-400 transition" size={24} />
+            </a>
+          </div>
         </div>
+      </div>
+
+      <div className="flex flex-col text-black justify-center items-center mt-10 bg-black">
+        <p className="text-center text-sm py-2 px-4 text-white">
+          Copyright © 2025 | All Rights Reserved by PolyMech Engineers. &reg;
+          ISO 9001 Certified Company
+        </p>
+        <p className="text-center text-sm py-2 px-4 text-white">
+          Developed by{" "}
+          <a
+            href="https://www.linkedin.com/in/ayan-nadaf-8119462ba/"
+            className=" hover:text-yellow-400 transition"
+            target="_blank"
+          >
+            Ayan
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/vaibhav-t-793173277/"
+            className=" hover:text-yellow-400 transition"
+            target="_blank"
+          >
+            Vaibhav
+          </a>
+        </p>
       </div>
     </div>
   );
