@@ -21,17 +21,14 @@ import img18 from "../assets/GalleryPage/18.jpg";
 import img20 from "../assets/GalleryPage/20.png";
 import img21 from "../assets/GalleryPage/21.jpg";
 import img22 from "../assets/GalleryPage/22.jpg";
-import img23 from "../assets/GalleryPage/23.jpg";
 import img24 from "../assets/GalleryPage/24.jpg";
 import img25 from "../assets/GalleryPage/25.jpg";
 import img26 from "../assets/GalleryPage/26.jpg";
-import img27 from "../assets/GalleryPage/27.jpg";
-import img28 from "../assets/GalleryPage/28.jpg";
-import img29 from "../assets/GalleryPage/29.jpg";
+
 import img30 from "../assets/GalleryPage/30.png";
 import img31 from "../assets/GalleryPage/31.jpg";
 import img32 from "../assets/GalleryPage/32.jpg";
-import img34 from "../assets/GalleryPage/34.jpg";
+
 import img35 from "../assets/GalleryPage/35.jpg";
 import img36 from "../assets/GalleryPage/36.jpg";
 import img37 from "../assets/GalleryPage/37.jpg";
@@ -51,7 +48,7 @@ import img50 from "../assets/GalleryPage/50.png";
 import img51 from "../assets/GalleryPage/51.png";
 import img52 from "../assets/GalleryPage/52.jpg";
 import img53 from "../assets/GalleryPage/53.jpg";
-import img54 from "../assets/GalleryPage/54.jpg";
+
 import img55 from "../assets/GalleryPage/55.jpg";
 import img56 from "../assets/GalleryPage/56.jpg";
 
@@ -81,7 +78,6 @@ const galleryContent = {
     img8,
     img9,
     img10,
-    img11,
     img12,
     img13,
     img14,
@@ -92,27 +88,22 @@ const galleryContent = {
     img20,
     img21,
     img22,
-    img23,
     img24,
     img25,
-    img26,
-    img27,
-    img28,
-    img29,
     img30,
     img31,
     img32,
     img40,
-    img34,
+  
     img37,
     img45,
     img46,
-    img54,
+
     img1,
     img4,
   ],
-  machinery: [img38, img39, img44, img43, img35, img36, img41],
-  team: [img55, img56],
+  machinery: [ img39, img44, img43, img35, img36, img41],
+  team: [img55],
   videos: [vid1, vid2, vid3, vid4, vid5],
 };
 
