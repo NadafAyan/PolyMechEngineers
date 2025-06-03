@@ -29,7 +29,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     alert("Message sent successfully!");
-    await fetch("https://polymechengineers-backend.onrender.com/send-whatsapp", {
+    // await fetch("https://polymechengineers-backend.onrender.com/send-email", {
+    await fetch("https://polymechengineers-backend.onrender.com/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -51,19 +52,20 @@ const Contact = () => {
       <div className="bg-[#EEF6FA] min-h-screen px-4 sm:px-6 lg:px-10 py-10 pt-28">
         <title>Contact us | PolyMech Engineers</title>
         <div className="flex justify-center text-center">
-  <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold pt-6 tracking-wider font-Montserrat">
-    CONTACT
-    <span className="text-yellow-400 px-2 md:px-4 lg:px-6 rounded-r-3xl tracking-wider">
-      US
-    </span>
-  </h1>
-</div>
-
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold pt-6 tracking-wider font-Montserrat">
+            CONTACT
+            <span className="text-yellow-400 px-2 md:px-4 lg:px-6 rounded-r-3xl tracking-wider">
+              US
+            </span>
+          </h1>
+        </div>
 
         <div className="bg-[#1e1e1ec7] text-white rounded-lg p-6 md:p-10 lg:p-16 flex flex-col lg:flex-row justify-between gap-10 mt-10">
           {/* Form */}
           <div className="flex-1">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Form</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Contact Form
+            </h2>
             <p className="mb-6 text-md md:text-lg font-bold">
               If You Got any question
               <br />
