@@ -7,6 +7,7 @@ import image4 from "../assets/casting.png";
 import image5 from "../assets/landingPage/4.png";
 import image6 from "../assets/homeImage.png";
 import ServiceExplanation from "./ServiceExplanation";
+import "./Service.css";
 
 const Services = () => {
   const textStyle = {
@@ -59,7 +60,7 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-20"
                 style={textStyle}
               >
-                <p className="absolute text-transparent border-2 md:text-8xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
+                <p className="stroke-text absolute text-transparent border-2 md:text-8xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
                 md:group-hover:scale-55 group-hover:scale-62 md:group-hover:translate-x-[18%] group-hover:translate-x-[27%] md:group-hover:translate-y-[-74.5%]
                 group-hover:translate-y-[-425%]">
                   Graphite Electrode
@@ -106,7 +107,7 @@ return (
               group-hover:translate-x-[13%] group-hover:translate-y-[-24%]"
                 style={textStyle}
               >
-                <p className="text-transparent border-2 md:text-6xl text-5xl font-bold text-center">
+                <p className="stroke-text text-transparent border-2 md:text-6xl text-5xl font-bold text-center">
                   Casting Components
                 </p>
               </div>
@@ -141,7 +142,7 @@ return (
 
                 <p
                   style={textStyle}
-                  className="absolute text-transparent border-2 md:text-7xl text-5xl font-bold text-center z-20 delay-300 transition-all duration-500 group-hover:translate-x-[34.6%] group-hover:translate-y-[-190%]"
+                  className="stroke-text absolute text-transparent border-2 md:text-7xl text-5xl font-bold text-center z-20 delay-300 transition-all duration-500 group-hover:translate-x-[34.6%] group-hover:translate-y-[-190%]"
                 >
                   Prototypes
                 </p>
@@ -184,7 +185,7 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-20"
                 style={textStyle}
               >
-                <p className="absolute text-transparent border-2 text-7xl font-bold text-center z-20 delay-300 transition-all duration-500 group-hover:translate-x-[29.7%] group-hover:translate-y-[-205.6%]">
+                <p className="stroke-text absolute text-transparent border-2 text-7xl font-bold text-center z-20 delay-300 transition-all duration-500 group-hover:translate-x-[29.7%] group-hover:translate-y-[-205.6%]">
                   EV Parts
                 </p>
               </div>
@@ -233,7 +234,7 @@ return (
               group-hover:translate-x-[15%] group-hover:translate-y-[-30%] group-hover:scale-70"
                 style={textStyle}
               >
-                <p className="text-transparent border-2 md:text-7xl text-5xl font-bold text-center">
+                <p className="stroke-text text-transparent border-2 md:text-7xl text-5xl font-bold text-center">
                   Automotive Parts
                 </p>
               </div>
@@ -277,7 +278,7 @@ return (
               group-hover:translate-x-[16%] group-hover:translate-y-[-28%]"
                 style={textStyle}
               >
-                <p className="text-transparent border-2 md:text-6xl text-5xl font-bold text-center">
+                <p className="stroke-text text-transparent border-2 md:text-6xl text-5xl font-bold text-center">
                   Aluminium Components
                 </p>
               </div>
