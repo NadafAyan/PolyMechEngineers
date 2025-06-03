@@ -45,11 +45,12 @@ return (
                 src={image3}
                 alt="prototypes"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-90 z-10 transition-all duration-500 delay-300 
-                group-hover:scale-45 group-hover:top-28 group-hover:left-28"
+                md:group-hover:scale-45 group-hover:scale-55 md:group-hover:top-28 group-hover:top-23 md:group-hover:left-28 group-hover:left-22"
               />
 
-              <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-33%]">
-                <p className="text-white md:text-8xl text-5xl font-bold text-center z-0">
+              <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 md:group-hover:scale-55 
+              group-hover:scale-62 md:group-hover:translate-x-[18%] group-hover:translate-x-[21%] md:group-hover:translate-y-[-33%] group-hover:translate-y-[-38%]">
+                <p className="text-white md:text-8xl text-3xl font-bold text-center z-0">
                   Graphite Electrode
                 </p>
               </div>
@@ -58,19 +59,21 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-20"
                 style={textStyle}
               >
-                <p className="absolute text-transparent border-2 md:text-8xl text-5xl font-bold text-center z-20 transition-all delay-300 duration-500 group-hover:scale-55 group-hover:translate-x-[18%] group-hover:translate-y-[-74.5%]">
+                <p className="absolute text-transparent border-2 md:text-8xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
+                md:group-hover:scale-55 group-hover:scale-62 md:group-hover:translate-x-[18%] group-hover:translate-x-[27%] md:group-hover:translate-y-[-74.5%]
+                group-hover:translate-y-[-425%]">
                   Graphite Electrode
                 </p>
               </div>
 
-              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start pb-66 pl-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-xl font-bold">
+              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start md:pb-66 pb-83 md:pl-70 pl-45 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                <p className="text-white text-[0.8rem] md:text-xl font-bold">
                   Lowest price in the industry
                 </p>
               </div>
 
               <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-lg font-medium">
+                <p className="text-white md:text-lg text-md font-medium">
                   Graphite Electrode Machining: Precision Perfected. At Polymech
                   Engineers, we specialize in the meticulous machining of
                   graphite electrodes, ensuring exacting precision and superior
