@@ -46,9 +46,8 @@ const faqData = [
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 640); // Tailwind sm breakpoint
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640); 
 
-  // Update isMobile on window resize
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640);
@@ -62,7 +61,6 @@ const Chatbot = () => {
     setSelected(selected === index ? null : index);
   };
 
-  // Determine button text based on open state and screen size
   const buttonText = () => {
     if (isMobile) {
       return isOpen ? "X" : "Help";
@@ -93,12 +91,11 @@ const Chatbot = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="mt-4 w-[340px] h-[500px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col"
           >
-            {/* Header */}
+
             <div className="bg-[#1e1e1e] text-white px-6 py-4 text-xl font-semibold">
               PolyMech Assistant
             </div>
 
-            {/* Scrollable FAQ */}
             <div
               className="flex-1 p-4 overflow-y-auto scroll-smooth space-y-4"
               data-lenis-prevent
@@ -129,7 +126,6 @@ const Chatbot = () => {
               ))}
             </div>
 
-            {/* Footer */}
             <div className="bg-[#f9f9f9] text-center p-3 text-sm text-gray-500">
               PolyMech Engineers © 2025
             </div>

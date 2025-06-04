@@ -27,7 +27,6 @@ const NavBar = () => {
           <img src={logo} alt="PolyMech Engineers" className="h-16 w-auto" />
         </Link>
 
-        {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -37,7 +36,6 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 lg:space-x-10 text-base lg:text-xl font-semibold">
           {links.map(({ path, label }) => (
             <li key={path}>
@@ -59,7 +57,6 @@ const NavBar = () => {
         </ul>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <ul className="md:hidden flex flex-col items-center space-y-6 text-lg font-semibold pb-6 bg-white/90 backdrop-blur-md">
           {links.map(({ path, label }) => (

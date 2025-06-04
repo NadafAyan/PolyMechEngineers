@@ -38,7 +38,7 @@ function App() {
   
     const timer = setTimeout(() => {
       document.body.style.overflow = "auto";
-    }, 1000); // Adjust based on your animation duration
+    }, 1000); 
   
     return () => clearTimeout(timer);
   }, []);

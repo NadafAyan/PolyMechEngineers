@@ -18,14 +18,13 @@ const GraphiteEDMBenefits = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="w-full mx-auto px-4 sm:px-8 py-10 space-y-10 bg-[#EEF6FA]">
-        {/* Heading */}
+
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 tracking-wide">
             Why use <span className="text-yellow-400">graphite for EDM?</span>
           </h2>
         </div>
 
-        {/* Section 1 */}
         <div className="flex flex-col md:flex-row items-center gap-6 bg-black text-white p-6 rounded-xl shadow-md">
           <div className="shrink-0">
             <img
@@ -43,7 +42,6 @@ const GraphiteEDMBenefits = () => {
           </p>
         </div>
 
-        {/* Section 2 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-6 bg-[#feb602] text-black p-6 rounded-xl shadow-md">
           <div className="shrink-0">
             <img
@@ -60,7 +58,6 @@ const GraphiteEDMBenefits = () => {
           </p>
         </div>
 
-        {/* Section 3 */}
         <div className="flex flex-col md:flex-row items-center gap-6 bg-black text-white p-6 rounded-xl shadow-md">
           <div className="shrink-0">
             <img

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const GraphiteVsCopper = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0); 
   }, []);
   return (
     <motion.div
@@ -42,7 +42,6 @@ const GraphiteVsCopper = () => {
           </p>
         </div> */}
 
-        {/* Feature Cards */}
       <div className="max-w-[1920px] bg-[#090909b9] p-6 sm:p-10 rounded-xl shadow-lg mt-12 mx-3">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
           <div className="bg-[#EEF6FA] text-black py-4 px-3 rounded-md font-semibold text-xl sm:text-3xl flex justify-center items-center">
@@ -66,7 +65,6 @@ const GraphiteVsCopper = () => {
           </div>
         </div>
 
-        {/* Table Section */}
         <div className="mt-12 bg-[#EEF6FA] rounded-md p-4">
           <div className="overflow-x-auto">
             <table className="min-w-full text-sm text-left border">

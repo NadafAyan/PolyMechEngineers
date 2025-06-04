@@ -61,7 +61,7 @@ const Contact = () => {
         </div>
 
         <div className="bg-[#1e1e1ec7] text-white rounded-lg p-6 md:p-10 lg:p-16 flex flex-col lg:flex-row justify-between gap-10 mt-10">
-          {/* Form */}
+
           <div className="flex-1">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Contact Form
@@ -117,7 +117,6 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Info */}
           <div className="flex-1 space-y-8 mt-10 lg:mt-32">
             <div className="flex items-start gap-4">
               <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1.5" />
@@ -161,7 +160,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Google map api */}
         <div className="mt-10">
           <LoadScript googleMapsApiKey="AIzaSyBVPadoh6P29Ogjvs0jQlJ2o-SKP9x5dOw">
             <GoogleMap

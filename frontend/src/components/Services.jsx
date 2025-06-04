@@ -61,7 +61,7 @@ return (
               >
                 <p className="absolute text-transparent border-2 md:text-7xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
                 md:md:group-hover:scale-55 md:group-hover:scale-62 md:md:group-hover:translate-x-[18%] 
-                group-hover:translate-y-[-98.9%] ">
+                md:group-hover:translate-y-[-98.9%] ">
                   Graphite Electrode
                 </p>
               </div>

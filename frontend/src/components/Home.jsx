@@ -20,7 +20,6 @@ const Home = ({ fullHeight = true }) => {
     >
       <title>Home | PolyMech Engineers</title>
     
-     {/* Blurred and semi-transparent background image */}
       <div
         className="absolute inset-0 w-full h-full z-0"
         style={{
@@ -36,7 +35,6 @@ const Home = ({ fullHeight = true }) => {
         
         <div className="space-y-6  sm:space-y-8 md:space-y-12 text-center pt-12 sm:pt-16 max-w-7xl mx-auto">
           
-          {/* Headline */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,7 +49,6 @@ const Home = ({ fullHeight = true }) => {
             </span>
           </motion.div>
 
-          {/* Main Heading */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,7 +63,6 @@ const Home = ({ fullHeight = true }) => {
             </h1>
           </motion.div>
 
-          {/* Subheading */}
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,7 +76,6 @@ const Home = ({ fullHeight = true }) => {
         </div>
       </div>
    
-      {/* Reusable Components */}
       <GraphiteVsCopper />
       <GraphiteInfo />
     </motion.div>

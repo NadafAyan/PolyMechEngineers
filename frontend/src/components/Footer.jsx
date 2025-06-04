@@ -12,7 +12,7 @@ import logo from "../assets/landingPage/Logo.png";
 const Footer = () => {
   return (
     <div className="bg-white text-gray-800 px-0 pt-10">
-      {/* Logo in Center */}
+
       <div className="flex-1 text-center">
         <img
           src={logo}
@@ -23,7 +23,7 @@ const Footer = () => {
 
       <div className="flex flex-col md:flex-row px-5 md:px-15 lg:px-25 xl:px-35 w-full mt-10  justify-between gap-10 sm:justify-center ">
         <div className="flex-1 space-y-6 mt-0  ">
-          {/* Info */}
+
           <div className="flex items-start gap-4  ">
             <FaMapMarkerAlt size={24} className="text-yellow-400 mt-1" />
             <div>
@@ -56,7 +56,6 @@ const Footer = () => {
         </div>
 
        
-        {/* Social Media */}
         <div className="flex-1 flex flex-col items-center justify-center text-center">
           <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
           <div className="flex gap-6">
