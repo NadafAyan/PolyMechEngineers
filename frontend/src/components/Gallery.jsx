@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import img1 from "../assets/GalleryPage/1.jpg";
@@ -102,9 +102,9 @@ const galleryContent = {
     img1,
     img4,
   ],
-  machinery: [ img39, img44, img43, img35, img36, img41],
+  machinery: [ img39, img35, img44, img36, img43,   img41],
   team: [img55],
-  videos: [vid1, vid2, vid3, vid4, vid5],
+  videos: [vid5,vid1, vid2, vid3, vid4, ],
 };
 
 const Gallery = () => {
@@ -115,6 +115,11 @@ const Gallery = () => {
       prev.includes(id) ? prev.filter((s) => s !== id) : [...prev, id]
     );
   };
+
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <motion.div

@@ -4,12 +4,12 @@ const features = [
   {
     icon: <FaStopwatch className="text-yellow-500 text-4xl" />,
     title: "Fast service",
-    description: "Rapid mold and die services: quick production without compromising precision and quality."
+    description: "Quick Electrode manufacturing without compromising precision and quality"
   },
   {
     icon: <FaCube className="text-yellow-500 text-4xl" />,
     title: "Latest Product Techniques",
-    description: "Safe transactions for molds and dies: ensuring secure payment processes for customers."
+    description: "We utilize the most advanced manufacturing techniques and modern technologies to ensure superior quality, efficiency, and innovation in every product we deliver."
   },
   {
     icon: <FaUsers className="text-yellow-500 text-4xl" />,
