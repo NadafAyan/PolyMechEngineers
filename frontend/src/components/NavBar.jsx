@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/landingPage/new_logo.webp";
+import logo from "../assets/landingPage/Logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const styles = {
