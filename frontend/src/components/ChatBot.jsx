@@ -25,7 +25,7 @@ const faqData = [
   {
     question: "How can I contact you?",
     answer:
-      "Call us at +91 9665756396 / 9422582439 or Email us at polymecheng@gmail.com.",
+      "Call us at +91 9665756396 / 9422582439 or Email us at Polymecheng@gmail.com.",
   },
   {
     question: "Do you provide custom solutions?",
@@ -93,7 +93,7 @@ const Chatbot = () => {
           >
 
             <div className="bg-[#1e1e1e] text-white px-6 py-4 text-xl font-semibold">
-              PolyMech Assistant
+              Polymech Assistant
             </div>
 
             <div
@@ -127,7 +127,7 @@ const Chatbot = () => {
             </div>
 
             <div className="bg-[#f9f9f9] text-center p-3 text-sm text-gray-500">
-              PolyMech Engineers © 2025
+              Polymech Engineers © 2025
             </div>
           </motion.div>
         )}

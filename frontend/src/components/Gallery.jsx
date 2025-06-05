@@ -1,56 +1,56 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import img1 from "../assets/GalleryPage/1.jpg";
-import img2 from "../assets/GalleryPage/2.png";
-import img3 from "../assets/GalleryPage/3.jpg";
-import img4 from "../assets/GalleryPage/4.jpg";
-import img6 from "../assets/GalleryPage/6.jpg";
-import img7 from "../assets/GalleryPage/7.jpg";
-import img8 from "../assets/GalleryPage/8.jpg";
-import img9 from "../assets/GalleryPage/9.jpg";
-import img10 from "../assets/GalleryPage/10.png";
-import img11 from "../assets/GalleryPage/11.jpg";
-import img12 from "../assets/GalleryPage/12.jpg";
-import img13 from "../assets/GalleryPage/13.png";
-import img14 from "../assets/GalleryPage/14.jpg";
-import img15 from "../assets/GalleryPage/15.jpg";
-import img16 from "../assets/GalleryPage/16.jpg";
-import img17 from "../assets/GalleryPage/17.jpg";
-import img18 from "../assets/GalleryPage/18.jpg";
-import img20 from "../assets/GalleryPage/20.png";
-import img21 from "../assets/GalleryPage/21.jpg";
-import img22 from "../assets/GalleryPage/22.jpg";
-import img24 from "../assets/GalleryPage/24.jpg";
-import img25 from "../assets/GalleryPage/25.jpg";
-import img26 from "../assets/GalleryPage/26.jpg";
+import img1 from "../assets/GalleryPage/1.webp";
+import img2 from "../assets/GalleryPage/2.webp";
+import img3 from "../assets/GalleryPage/3.webp";
+import img4 from "../assets/GalleryPage/4.webp";
+import img6 from "../assets/GalleryPage/6.webp";
+import img7 from "../assets/GalleryPage/7.webp";
+import img8 from "../assets/GalleryPage/8.webp";
+import img9 from "../assets/GalleryPage/9.webp";
+import img10 from "../assets/GalleryPage/10.webp";
+import img11 from "../assets/GalleryPage/11.webp";
+import img12 from "../assets/GalleryPage/12.webp";
+import img13 from "../assets/GalleryPage/13.webp";
+import img14 from "../assets/GalleryPage/14.webp";
+import img15 from "../assets/GalleryPage/15.webp";
+import img16 from "../assets/GalleryPage/16.webp";
+import img17 from "../assets/GalleryPage/17.webp";
+import img18 from "../assets/GalleryPage/18.webp";
+import img20 from "../assets/GalleryPage/20.webp";
+import img21 from "../assets/GalleryPage/21.webp";
+import img22 from "../assets/GalleryPage/22.webp";
+import img24 from "../assets/GalleryPage/24.webp";
+import img25 from "../assets/GalleryPage/25.webp";
+import img26 from "../assets/GalleryPage/26.webp";
 
-import img30 from "../assets/GalleryPage/30.png";
-import img31 from "../assets/GalleryPage/31.jpg";
-import img32 from "../assets/GalleryPage/32.jpg";
+import img30 from "../assets/GalleryPage/30.webp";
+import img31 from "../assets/GalleryPage/31.webp";
+import img32 from "../assets/GalleryPage/32.webp";
 
-import img35 from "../assets/GalleryPage/35.jpg";
-import img36 from "../assets/GalleryPage/36.jpg";
-import img37 from "../assets/GalleryPage/37.jpg";
-import img38 from "../assets/GalleryPage/38.png";
-import img39 from "../assets/GalleryPage/39.png";
-import img40 from "../assets/GalleryPage/40.jpg";
-import img41 from "../assets/GalleryPage/41.png";
-import img42 from "../assets/GalleryPage/42.jpg";
-import img43 from "../assets/GalleryPage/43.png";
-import img44 from "../assets/GalleryPage/44.png";
-import img45 from "../assets/GalleryPage/45.jpg";
-import img46 from "../assets/GalleryPage/46.jpg";
-import img47 from "../assets/GalleryPage/47.jpg";
-import img48 from "../assets/GalleryPage/48.jpg";
-import img49 from "../assets/GalleryPage/49.png";
-import img50 from "../assets/GalleryPage/50.png";
-import img51 from "../assets/GalleryPage/51.png";
-import img52 from "../assets/GalleryPage/52.jpg";
-import img53 from "../assets/GalleryPage/53.jpg";
+import img35 from "../assets/GalleryPage/35.webp";
+import img36 from "../assets/GalleryPage/36.webp";
+import img37 from "../assets/GalleryPage/37.webp";
+import img38 from "../assets/GalleryPage/38.webp";
+import img39 from "../assets/GalleryPage/39.webp";
+import img40 from "../assets/GalleryPage/40.webp";
+import img41 from "../assets/GalleryPage/41.webp";
+import img42 from "../assets/GalleryPage/42.webp";
+import img43 from "../assets/GalleryPage/43.webp";
+import img44 from "../assets/GalleryPage/44.webp";
+import img45 from "../assets/GalleryPage/45.webp";
+import img46 from "../assets/GalleryPage/46.webp";
+import img47 from "../assets/GalleryPage/47.webp";
+import img48 from "../assets/GalleryPage/48.webp";
+import img49 from "../assets/GalleryPage/49.webp";
+import img50 from "../assets/GalleryPage/50.webp";
+import img51 from "../assets/GalleryPage/51.webp";
+import img52 from "../assets/GalleryPage/52.webp";
+import img53 from "../assets/GalleryPage/53.webp";
 
-import img55 from "../assets/GalleryPage/55.jpg";
-import img56 from "../assets/GalleryPage/56.jpg";
+import img55 from "../assets/GalleryPage/55.webp";
+import img56 from "../assets/GalleryPage/56.webp";
 
 import vid1 from "../assets/GalleryPage/26.mp4";
 import vid2 from "../assets/GalleryPage/27.mp4";
@@ -104,7 +104,7 @@ const galleryContent = {
   ],
   machinery: [ img39, img35, img44, img36, img43,   img41],
   team: [img55],
-  videos: [vid5,vid1, vid2, vid3, vid4, ],
+  videos: [vid5,vid1,vid3, vid4, ],
 };
 
 const Gallery = () => {
@@ -129,7 +129,7 @@ const Gallery = () => {
       transition={{ duration: 0.5 }}
       className="bg-[#EEF6FA] min-h-screen overflow-hidden px-4 pt-28 pb-10"
     >
-      <title>Gallery | PolyMech Engineers</title>
+      <title>Gallery | Polymech Engineers</title>
       <h1 className="font-bold text-center mb-10 text-2xl md:text-6xl">
         OUR{" "}
         <span className="bg-yellow-400 px-2 pr-10 rounded-r-3xl md:pr-14">

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import GraphiteVsCopper from "./GraphiteVsCopper";
 import GraphiteInfo from "./GraphiteInfo";
-import bgimg from "../assets/Home_bg.jpg";
+import bgimg from "../assets/Home_bg.webp";
 
 const Home = ({ fullHeight = true }) => {
   useEffect(() => {
@@ -18,7 +18,7 @@ const Home = ({ fullHeight = true }) => {
       transition={{ duration: 0.5 }}
       className="bg-[#EEF6FA] min-h-screen overflow-hidden"
     >
-      <title>Home | PolyMech Engineers</title>
+      <title>Home | Polymech Engineers</title>
     
       <div
         className="absolute inset-0 w-full h-full z-0"

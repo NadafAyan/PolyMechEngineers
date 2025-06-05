@@ -1,6 +1,6 @@
 import { React, useEffect } from "react";
 import { motion } from "framer-motion";
-import bgimg from "../assets/Compancy image.jpg";
+import bgimg from "../assets/Compancy image.webp";
 import OwnerNames from "./OwnerNames";
 import Clients from '../components/Clients';
 //import ServiceExplanation from "./ServiceExplanation";
@@ -21,7 +21,7 @@ const About = ({ fullHeight = true }) => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
-      <title>About us | PolyMech Engineers</title>
+      <title>About us | Polymech Engineers</title>
 
       <div
         style={{

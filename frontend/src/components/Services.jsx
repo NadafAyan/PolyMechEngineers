@@ -1,11 +1,11 @@
 import { React, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import image1 from "../assets/landingPage/1.png";
-import image2 from "../assets/landingPage/2.png";
-import image3 from "../assets/trode.png";
-import image4 from "../assets/casting.png";
-import image5 from "../assets/landingPage/4.png";
-import image6 from "../assets/homeImage.png";
+import image1 from "../assets/landingPage/1.webp";
+import image2 from "../assets/landingPage/2.webp";
+import image3 from "../assets/trode.webp";
+import image4 from "../assets/casting.webp";
+import image5 from "../assets/landingPage/4.webp";
+import image6 from "../assets/homeImage.webp";
 import ServiceExplanation from "./ServiceExplanation";
 
 const Services = () => {
@@ -27,7 +27,7 @@ return (
     transition={{ duration: 0.5 }}
     className="bg-[#EEF6FA] min-h-screen overflow-hidden"
   >
-      <title>Services | PolyMech Engineers</title>
+      <title>Services | Polymech Engineers</title>
       <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28 max-w-[1440px] mx-auto">
         <h1 className="md:text-6xl text-3xl font-bold text-center pt-6 mb-10">
           OUR{" "}
@@ -314,12 +314,12 @@ export default Services;
 
 // import { React, useEffect, useState } from "react";
 // import { motion } from "framer-motion";
-// import image1 from "../assets/landingPage/1.png";
-// import image2 from "../assets/landingPage/2.png";
-// import image3 from "../assets/trode.png";
-// import image4 from "../assets/casting.png";
-// import image5 from "../assets/landingPage/4.png";
-// import image6 from "../assets/homeImage.png";
+// import image1 from "../assets/landingPage/1.webp";
+// import image2 from "../assets/landingPage/2.webp";
+// import image3 from "../assets/trode.webp";
+// import image4 from "../assets/casting.webp";
+// import image5 from "../assets/landingPage/4.webp";
+// import image6 from "../assets/homeImage.webp";
 // import ServiceExplanation from "./ServiceExplanation";
 // import "./Service.css";
 
@@ -342,7 +342,7 @@ export default Services;
 //     transition={{ duration: 0.5 }}
 //     className="bg-[#EEF6FA] min-h-screen overflow-hidden"
 //   >
-//       <title>Services | PolyMech Engineers</title>
+//       <title>Services | Polymech Engineers</title>
 //       <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28">
 //         <h1 className="md:text-6xl text-3xl font-bold text-center pt-6 mb-10">
 //           OUR{" "}

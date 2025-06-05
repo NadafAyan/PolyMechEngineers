@@ -7,7 +7,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import logo from "../assets/landingPage/Logo.png";
+import logo from "../assets/landingPage/new_logo.webp";
 
 const Footer = () => {
   return (
@@ -16,8 +16,8 @@ const Footer = () => {
       <div className="flex-1 text-center">
         <img
           src={logo}
-          alt="PolyMech Engineers"
-          className="h-18 w-auto mx-auto"
+          alt="Polymech Engineers"
+          className="h-22 w-auto mx-auto"
         />
       </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
             <FaEnvelope size={24} className="text-yellow-400 mt-1" />
             <div>
               <h3 className="text-xl font-bold">Email</h3>
-              <p>polymecheng@gmail.com</p>
+              <p>Polymecheng@gmail.com</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -60,21 +60,21 @@ const Footer = () => {
           <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
           <div className="flex gap-6">
             <a
-              href="https://x.com/polymecheng"
+              href="https://x.com/Polymecheng"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaTwitter className="text-black hover:text-yellow-400 transition" size={24} />
             </a>
             <a
-              href="https://www.instagram.com/polymech_engineers/profilecard/?igsh=NTd1bDVxeGM5eXJ0"
+              href="https://www.instagram.com/Polymech_engineers/profilecard/?igsh=NTd1bDVxeGM5eXJ0"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram className="text-black hover:text-yellow-400 transition" size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/company/polymech-engineers/about/"
+              href="https://www.linkedin.com/company/Polymech-engineers/about/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,7 +86,7 @@ const Footer = () => {
 
       <div className="flex flex-col text-black justify-center items-center mt-10 bg-black">
         <p className="text-center text-sm py-2 px-4 text-white">
-          Copyright © 2025 | All Rights Reserved by PolyMech Engineers. &reg;
+          Copyright © 2025 | All Rights Reserved by Polymech Engineers. &reg;
           ISO 9001 Certified Company
         </p>
         <p className="text-center text-sm py-2 px-4 text-white">

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import image1 from "../assets/HomePageExtension/1.png";
-import image2 from "../assets/HomePageExtension/2.png";
-import image3 from "../assets/HomePageExtension/3.png";
+import image1 from "../assets/HomePageExtension/1.webp";
+import image2 from "../assets/HomePageExtension/2.webp";
+import image3 from "../assets/HomePageExtension/3.webp";
 
 const GraphiteEDMBenefits = () => {
   useEffect(() => {
@@ -51,7 +51,7 @@ const GraphiteEDMBenefits = () => {
             />
           </div>
           <p className="text-base sm:text-lg leading-relaxed text-justify font-medium">
-            At PolyMech Engineers, we use only the finest graphite materials with
+            At Polymech Engineers, we use only the finest graphite materials with
             precise production control. Our graphite ensures low thermal
             expansion, excellent dimensional stability, and maintains mechanical
             strength even at high temperatures.

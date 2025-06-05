@@ -29,8 +29,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     alert("Message sent successfully!");
-    // await fetch("https://polymechengineers-backend.onrender.com/send-email", {
-    await fetch("https://polymechengineers-backend.onrender.com/send-email", {
+    // await fetch("https://Polymechengineers-backend.onrender.com/send-email", {
+    await fetch("https://Polymechengineers-backend.onrender.com/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -50,7 +50,7 @@ const Contact = () => {
       className="bg-[#EEF6FA] min-h-screen overflow-hidden"
     >
       <div className="bg-[#EEF6FA] min-h-screen px-4 sm:px-6 lg:px-10 py-10 pt-28">
-        <title>Contact us | PolyMech Engineers</title>
+        <title>Contact us | Polymech Engineers</title>
         <div className="flex justify-center text-center">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold pt-6 tracking-wider font-Montserrat">
             CONTACT
@@ -138,7 +138,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl md:text-2xl font-bold">Email</h3>
                 <p className="text-md md:text-xl hover:text-yellow-400 transition">
-                  polymecheng@gmail.com
+                  Polymecheng@gmail.com
                 </p>
               </div>
             </div>

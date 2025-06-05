@@ -1,12 +1,12 @@
 import React from "react";
-import img1 from "../assets/Clients/Aequs.jpg";
-import img2 from "../assets/Clients/Alkop.jpg";
-import img3 from "../assets/Clients/Elcom.jpg";
-import img4 from "../assets/Clients/i.jpg";
-import img5 from "../assets/Clients/Mechasoft.jpg";
-import img6 from "../assets/Clients/pdl.jpg";
-import img7 from "../assets/Clients/prestige.jpg";
-import img8 from "../assets/Clients/unknw.jpg";
+import img1 from "../assets/Clients/Aequs.webp";
+import img2 from "../assets/Clients/Alkop.webp";
+import img3 from "../assets/Clients/Elcom.webp";
+import img4 from "../assets/Clients/i.webp";
+import img5 from "../assets/Clients/Mechasoft.webp";
+import img6 from "../assets/Clients/pdl.webp";
+import img7 from "../assets/Clients/prestige.webp";
+import img8 from "../assets/Clients/unknw.webp";
 
 const clients = [img1, img2, img3, img4, img5, img6, img7, img8];
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/landingPage/Logo.png";
+import logo from "../assets/landingPage/new_logo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const styles = {
@@ -22,9 +22,9 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-sm border-b border-white/30 shadow-md">
-  <div className=" max-w-full mx-auto w-full flex justify-between items-center px-4 py-3">
+  <div className=" max-w-full mx-auto w-full flex justify-between items-center px-4 py-2">
         <Link to="/" onClick={() => setIsMenuOpen(false)}>
-          <img src={logo} alt="PolyMech Engineers" className="h-16 w-auto" />
+          <img src={logo} alt="PolyMech Engineers" className="h-18 w-auto" />
         </Link>
 
         <div className="md:hidden">
