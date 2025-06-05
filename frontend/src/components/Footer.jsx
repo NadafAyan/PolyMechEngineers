@@ -7,7 +7,8 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import logo from "../assets/landingPage/new_logo.webp";
+
+import logo from "../assets/landingPage/Logo.png";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
         <img
           src={logo}
           alt="Polymech Engineers"
-          className="h-22 w-auto mx-auto"
+          className="h-16 w-auto mx-auto"
         />
       </div>
 
