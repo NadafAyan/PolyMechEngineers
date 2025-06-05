@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import image1 from '../assets/landingPage/1.webp';
 import image3 from '../assets/landingPage/3.webp';
 import image4 from '../assets/landingPage/4.webp';
-import Logo from '../assets/PolyMech_Logo_updated-removebg-preview.webp';
+import Logo from '../assets/LandingLogo.webp';
 import graphite1 from '../assets/landingPage/graphite bg removed 1.webp';
 import graphite2 from '../assets/replace.webp';
 
