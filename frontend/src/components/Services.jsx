@@ -15,18 +15,18 @@ const Services = () => {
     WebkitTextStrokeColor: "white",
   };
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-return (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -20 }}
-    transition={{ duration: 0.5 }}
-    className="bg-[#EEF6FA] min-h-screen overflow-hidden"
-  >
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+      className="bg-[#EEF6FA] min-h-screen overflow-hidden"
+    >
       <title>Services | Polymech Engineers</title>
       <div className="bg-[#EEF6FA] min-h-screen px-6 py-10 pt-28 max-w-[1440px] mx-auto">
         <h1 className="md:text-6xl text-3xl font-bold text-center pt-6 mb-10">
@@ -48,8 +48,10 @@ return (
                 md:md:group-hover:scale-45 md:group-hover:scale-55 md:md:group-hover:top-28 md:group-hover:top-23 md:md:group-hover:left-28 md:group-hover:left-22"
               />
 
-              <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 md:md:group-hover:scale-55 
-               md:md:group-hover:translate-x-[18%] md:group-hover:translate-x-[21%] md:md:group-hover:translate-y-[-33%] md:group-hover:translate-y-[-38%]">
+              <div
+                className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 md:md:group-hover:scale-55 
+               md:md:group-hover:translate-x-[18%] md:group-hover:translate-x-[21%] md:md:group-hover:translate-y-[-33%] md:group-hover:translate-y-[-38%]"
+              >
                 <p className="text-white md:text-7xl text-3xl font-bold text-center z-0">
                   Graphite Electrode
                 </p>
@@ -59,9 +61,11 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-20"
                 style={textStyle}
               >
-                <p className="absolute text-transparent border-2 md:text-7xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
+                <p
+                  className="absolute text-transparent border-2 md:text-7xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
                 md:md:group-hover:scale-55 md:group-hover:scale-62 md:md:group-hover:translate-x-[18%] 
-                md:group-hover:translate-y-[-98.9%] ">
+                md:group-hover:translate-y-[-98.9%] "
+                >
                   Graphite Electrode
                 </p>
               </div>
@@ -111,13 +115,18 @@ return (
                 </p>
               </div>
 
-              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-12 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 z-30">
-                <p className="text-white text-xl font-medium">
-                  Graphite Electrode Machining: Precision Perfected. At Polymech
-                  Engineers, we specialize in the meticulous machining of
-                  graphite electrodes, ensuring exacting precision and superior
-                  quality. Leveraging advanced technology and our team's
-                  expertise.
+              <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 z-30">
+                <p className="text-white text-[1.1rem] font-medium">
+                  Casting Component
+                  Manufacturing and Machining: Crafting Excellence. At Polymech
+                  Engineers, we excel in the manufacturing and machining of
+                  casting components, meticulously crafting each piece to
+                  perfection. With a focus on precision and quality, our
+                  state-of-the-art facilities and skilled team ensure that every
+                  component meets the highest industry standards. Whether it's
+                  complex geometries or critical tolerances, trust Polymech
+                  Engineers to deliver superior casting solutions that drive
+                  your success.
                 </p>
               </div>
             </div>
@@ -184,8 +193,10 @@ return (
                 className="absolute inset-0 flex items-center justify-center z-20"
                 style={textStyle}
               >
-                <p className="absolute text-transparent border-2 text-6xl font-bold text-center z-20 delay-300 transition-all duration-500 
-                md:group-hover:translate-x-[24%] md:group-hover:translate-y-[-227%]">
+                <p
+                  className="absolute text-transparent border-2 text-6xl font-bold text-center z-20 delay-300 transition-all duration-500 
+                md:group-hover:translate-x-[24%] md:group-hover:translate-y-[-227%]"
+                >
                   EV Parts
                 </p>
               </div>
@@ -266,8 +277,10 @@ return (
                 md:group-hover:scale-55 md:group-hover:top-26 md:group-hover:left-32"
               />
 
-              <div className="absolute inset-0 flex items-center justify-center z-0 transition-all duration-500 delay-300 md:group-hover:scale-65
-              md:group-hover:translate-x-[16%] md:group-hover:translate-y-[-28%]">
+              <div
+                className="absolute inset-0 flex items-center justify-center z-0 transition-all duration-500 delay-300 md:group-hover:scale-65
+              md:group-hover:translate-x-[16%] md:group-hover:translate-y-[-28%]"
+              >
                 <p className="text-white md:text-6xl text-5xl font-bold text-center">
                   Aluminium Components
                 </p>
@@ -288,16 +301,16 @@ return (
                   <div className="absolute inset-0 flex flex-wrap items-end delay-300 justify-start p-6 mb-6 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 z-30">
                     <p className="text-white text-xl font-medium">
                       Drive excellence in automotive performance with our
-                      meticulously crafted sub-assemblies. Engineered to seamlessly
-                      integrate into vehicle systems, our automotive parts
-                      sub-assemblies ensure optimal functionality and reliability.
-                      From engines to transmissions, our precision manufacturing
-                      processes guarantee superior quality and compatibility.
+                      meticulously crafted sub-assemblies. Engineered to
+                      seamlessly integrate into vehicle systems, our automotive
+                      parts sub-assemblies ensure optimal functionality and
+                      reliability. From engines to transmissions, our precision
+                      manufacturing processes guarantee superior quality and
+                      compatibility.
                     </p>
                   </div>
                 </p>
               </div>
-
             </div>
           </div>
         </div>
@@ -309,8 +322,6 @@ return (
 };
 
 export default Services;
-
-
 
 // import { React, useEffect, useState } from "react";
 // import { motion } from "framer-motion";
@@ -359,11 +370,11 @@ export default Services;
 //               <img
 //                 src={image3}
 //                 alt="prototypes"
-//                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-90 z-10 transition-all duration-500 delay-300 
+//                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-90 z-10 transition-all duration-500 delay-300
 //                 md:md:group-hover:scale-45 md:group-hover:scale-55 md:md:group-hover:top-28 md:group-hover:top-23 md:md:group-hover:left-28 md:group-hover:left-22"
 //               />
 
-//               <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 md:md:group-hover:scale-55 
+//               <div className="absolute inset-0 flex items-center justify-center z-0 group transition-all delay-300 duration-500 md:md:group-hover:scale-55
 //               md:group-hover:scale-62 md:md:group-hover:translate-x-[18%] md:group-hover:translate-x-[21%] md:md:group-hover:translate-y-[-33%] md:group-hover:translate-y-[-38%]">
 //                 <p className="text-white md:text-8xl text-3xl font-bold text-center z-0">
 //                   Graphite Electrode
@@ -374,7 +385,7 @@ export default Services;
 //                 className="absolute inset-0 flex items-center justify-center z-20"
 //                 style={textStyle}
 //               >
-//                 <p className="stroke-text absolute text-transparent border-2 md:text-8xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500 
+//                 <p className="stroke-text absolute text-transparent border-2 md:text-8xl text-3xl font-bold text-center z-20 transition-all delay-300 duration-500
 //                 md:md:group-hover:scale-55 md:group-hover:scale-62 md:md:group-hover:translate-x-[18%] md:group-hover:translate-x-[27%] md:md:group-hover:translate-y-[-74.5%]
 //                 md:group-hover:translate-y-[-425%]">
 //                   Graphite Electrode
@@ -408,7 +419,7 @@ export default Services;
 //               />
 
 //               <div
-//                 className="absolute inset-0 flex items-center justify-center z-0 group transition-all duration-500 delay-300 md:group-hover:scale-85 
+//                 className="absolute inset-0 flex items-center justify-center z-0 group transition-all duration-500 delay-300 md:group-hover:scale-85
 //               md:group-hover:translate-x-[13%] md:group-hover:translate-y-[-24%]"
 //               >
 //                 <p className="text-white md:text-6xl text-5xl font-bold text-center">
@@ -417,7 +428,7 @@ export default Services;
 //               </div>
 
 //               <div
-//                 className="absolute inset-0 flex items-center justify-center z-20 group transition-all duration-500 delay-300 md:group-hover:scale-85 
+//                 className="absolute inset-0 flex items-center justify-center z-20 group transition-all duration-500 delay-300 md:group-hover:scale-85
 //               md:group-hover:translate-x-[13%] md:group-hover:translate-y-[-24%]"
 //                 style={textStyle}
 //               >
@@ -623,5 +634,3 @@ export default Services;
 // };
 
 // export default Services;
-
-
