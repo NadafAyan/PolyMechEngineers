@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 const allowedOrigins = [
    "http://localhost:5173",
   "https://polymechengineers.vercel.app",
+   "https://www.polymechengineers.com",
 ];
 
 app.use(cors({
