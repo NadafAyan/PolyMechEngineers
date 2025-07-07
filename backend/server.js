@@ -32,7 +32,7 @@ app.post("/send-email", async (req, res) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'PolyMech Engineers <onboarding@resend.dev>',
+      from: 'Polymech Engineers <onboarding@resend.dev>',
       to: process.env.RECEIVER_EMAIL, // Your email address
       subject: 'New Contact Form Submission',
       html: `
