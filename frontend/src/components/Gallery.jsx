@@ -29,8 +29,8 @@ import img30 from "../assets/GalleryPage/30.webp";
 import img31 from "../assets/GalleryPage/31.webp";
 import img32 from "../assets/GalleryPage/32.webp";
 
-import img35 from "../assets/GalleryPage/35.webp";
-import img36 from "../assets/GalleryPage/36.webp";
+//import img35 from "../assets/GalleryPage/35.webp";
+import img36 from "../assets/GalleryPage/36.png";
 import img37 from "../assets/GalleryPage/37.webp";
 import img38 from "../assets/GalleryPage/38.webp";
 import img39 from "../assets/GalleryPage/39.webp";
@@ -102,7 +102,7 @@ const galleryContent = {
     img1,
     img4,
   ],
-  machinery: [ img39, img35, img44, img36, img43,   img41],
+  machinery: [ img39, img44, img36, img43,   img41],
   team: [img55],
   videos: [vid5,vid1,vid3, vid4, ],
 };

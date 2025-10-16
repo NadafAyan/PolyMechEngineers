@@ -97,15 +97,15 @@ const Footer = () => {
             className=" hover:text-yellow-400 transition"
             target="_blank"
           >
-            Ayan
+            Ayan Nadaf
           </a>{" "}
           and{" "}
           <a
-            href="https://www.linkedin.com/in/vaibhav-t-793173277/"
+            href="https://www.linkedin.com/in/vaibhav9t/"
             className=" hover:text-yellow-400 transition"
             target="_blank"
           >
-            Vaibhav
+            Vaibhav Tembukade
           </a>
         </p>
       </div>
